@@ -1,0 +1,63 @@
+@font-face {
+    font-family: RobotoThin;
+    src: url(/src/fonts/roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(/src/fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url(/src/fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: JennaSue;
+    src: url(/src/fonts/JennaSue.ttf);
+}
+
+a{
+  text-decoration: none;
+  color : #000;
+}
+
+h1{
+  margin: 20px 0px;
+}
+
+h2{
+  font-family: 'RobotoLight';
+  font-size: 35px;
+  margin: 80px 0px;
+  text-align: center;
+}
+
+h3{
+  font-family: 'RobotoLight';
+  font-size: 25px;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+h3{
+  font-family: 'RobotoLight';
+  font-size: 25px;
+  margin: 15px 0px;
+}
+h4{
+  font-family: 'RobotoLight';
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+p{
+  font-family: 'RobotoRegular';
+  font-size: 15px;
+}
+
+.quote h3{
+  font-family: 'JennaSue';
+  color : #fff;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 50px;
+}

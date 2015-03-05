@@ -1,0 +1,18 @@
+@import 'common';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+.realisations h3{
+  margin-top: 55px;
+}
+.quote{
+  display: block;
+  min-height: 200px;
+  background-color: #000;
+  background-image: url('/src/img/steveJobs.jpg');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-top: 81px;
+  background-size: auto 100%;
+}
+

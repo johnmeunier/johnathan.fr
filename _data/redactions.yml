@@ -1,0 +1,18 @@
+articles:
+  lilleweb:
+    name: Lille Web
+    description: "communauté web lille"
+    link: http://www.lilleweb.fr
+  perso:
+    name: Blog perso
+    description: "partage de ressenti et d'expérience personnelle"
+    link: "/blog"
+conferences:
+  deviceLightTakeOff:
+    name: Talk deviceLight
+    description: "Durant le dernier TakeOff Talks, j’ai expliqué (dans un format court) comment récupérer en lux la luminosité ambiante, voici mes slides pour ceux qui n’ont pas pu venir ou ceux qui veulent les revoir."
+    link: http://lilleweb.fr/event/2014/10/30/talks-deviceLight/
+  iBeaconTafeOff:
+    name: iBeacon en Javascript
+    description: "J’ai eu l’occasion de présenter ma vision des iBeacons et leur utilisation en Javascript. Voici mes slides que vous pouvez découvrir ou redécouvrir. Ils sont minimalistes afin de se focaliser sur les exemples oraux. Je compte potentiellement la redonner si des gens sont intéressés. Je changerai partiellement la partie technique."
+    link: http://lilleweb.fr/event/2014/10/14/ibeacon-en-javascript/

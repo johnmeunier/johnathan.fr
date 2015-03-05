@@ -1,0 +1,11 @@
+@import 'socialNetwork';
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 30px 0px;
+  margin-top: 80px;
+  .socialNetwork{
+    margin: 0px;
+  }
+}

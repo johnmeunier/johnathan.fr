@@ -1,0 +1,28 @@
+# Site settings
+title: Johnathan MEUNIER
+email: johnathan2693@gmail.com
+description: "Johnathan MEUNIER, développeur front-end, passionné de web, fondateur de Lille Web."
+baseurl: ""
+url: "http://johnathan.fr"
+twitter_username: johnathansup
+github_username:  johnathansup
+paginate: 5
+paginate_path: "blog/page:num/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+  sass_dir: _sass
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+        - "/data.json"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "daily"
+    priority_name: "0.8"

@@ -1,0 +1,62 @@
+---
+
+---
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <div id="content">
+      <div class="row-med realisations">
+        <h2> Ce que j'ai fait </h2>
+        <div class="row">
+          {% for realisation in site.data.realisations limit:3 %}
+            <div class="thumbail">
+              <img src="{{realisation[1].image}}" alt="{{realisation[1].description}}">
+              <h3> {{realisation[1].name}} </h3>
+              <p> {{realisation[1].description}} </p>
+            </div>
+          {% endfor %}
+        </div>
+        <h3>
+          <a href="/realisations"> Toutes mes réalisations </a>
+        <h3>
+      </div>
+      <div class="row-full quote">
+        <h3> Stay ungry, stay foolish </h3>
+      </div>
+      <div class="row-med redactions">
+        <h2> Rédactions </h2>
+        <div class="row">
+          <div class="thumbail border">
+            <img src="/src/img/talk.png" alt="">
+            <h3>Talks</h3>
+            <h4> Derniers Talks : </h4>
+            {% for redaction in site.data.redactions.conferences limit:3 %}
+              <p><a href="{{redaction[1].link}}">{{redaction[1].name}}</a></p>
+            {% endfor %}
+          </div>
+          <div class="thumbail border">
+            <img src="/src/img/articles.png" alt="">
+            <h3>Articles</h3>
+            <h4> J'écris sur </h4>
+            {% for redaction in site.data.redactions.articles limit:3 %}
+              <p><a href="{{redaction[1].link}}">{{redaction[1].name}}</a></p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

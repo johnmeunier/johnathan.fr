@@ -1,0 +1,50 @@
+header{
+  color : #fff;
+  position: relative;
+  max-height: 85%;
+  width: 100%;
+  display: block;
+  min-height: 100px;
+  background: url('/src/img/vieux_lille_dark.jpg');
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  nav{
+    font-family: 'RobotoRegular';
+    font-size: 25px;
+    h2{
+      margin: 0px;
+      font-size: 25px;
+      a{
+        color : #FFF;
+      }
+    }
+    .fixedRight a{
+      font-family: 'RobotoThin';
+      font-size: 20px;
+      color : #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      transition : all 0.1s ease;
+      &:hover{
+        transition : all 0.1s ease;
+        background-color: rgba(0,0,0,0.4);
+      }
+    }
+  }
+  .mainContent{
+    padding: 150px 0px;
+    text-align: center;
+    h1{
+      font-size: 70px;
+      font-family: 'RobotoThin';
+      span{
+        display: none;
+        &:first-child{
+          display: inline-block;
+        }
+      }
+    }
+    @import 'socialNetwork';
+  }
+}

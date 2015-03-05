@@ -1,0 +1,28 @@
+h2{
+  margin: 30px 0px;
+}
+h4{
+  text-align: center;
+}
+
+footer{
+  margin-top: 0px;
+}
+
+ul.pagination{
+  text-align: center;
+  margin: 40px 0px;
+  li{
+    display: inline-block;
+    a{
+      background-color:#F7F7F7;
+      padding: 20px;
+      font-family: RobotoLight;
+    }
+    &.active, &:hover{
+      a{
+        background-color:#eee;
+      }
+    }
+  }
+}

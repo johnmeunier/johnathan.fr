@@ -1,0 +1,12 @@
+profile:
+ display: "Profile"
+ link: "/profile"
+ desc: ""
+blog:
+ display: "Blog"
+ link: "/blog"
+ desc: ""
+realisation:
+ display: "Réalisation"
+ link: "/realisations"
+ desc: ""

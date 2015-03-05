@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <div class="fixedLeft"><h2> <a href="/">Johnathan MEUNIER</a></h2></div>
+    <div class="fixedRight">
+      <ul class="inlineUl">
+        {% for el in site.data.nav %}
+          <li><a href="{{ el[1].link }}">{{el[1].display}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  <div class="mainContent">
+    <h1> Je suis
+      <span class="jeSuis"> développeur web </span>
+      <span class="jeSuis"> Johnathan MEUNIER </span>
+      <span class="jeSuis"> passionné</span>
+      <span class="jeSuis"> développeur front-end </span>
+    </h1>
+    {% include socialNetwork.html %}
+  </div>
+</header>

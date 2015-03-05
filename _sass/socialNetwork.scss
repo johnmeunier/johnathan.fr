@@ -1,0 +1,48 @@
+.socialNetwork{
+  margin-top: 70px;
+  i{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url("/src/img/spriteSocialNetwork.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: -100px -50px;
+    margin: 0px 20px;
+    &:hover{
+      background-position: -100px 0px;
+    }
+  }
+  a + a i {
+    background-position: -150px -50px;
+    &:hover{
+      background-position: -150px 0px;
+    }
+  }
+  a + a + a i{
+    background-position: -50px -50px;
+    &:hover{
+      background-position: -50px 0px;
+    }
+  }
+  a + a + a + a i{
+    background-position: -200px -50px;
+    &:hover{
+      background-position: -200px 0px;
+    }
+  }
+}
+
+.shareTwitter{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image : url('/src/img/shareTwitter.png');
+  background-size: 29px 29px;
+  background-repeat : no-repeat;
+  background-position: 50% 0%;
+  iframe{
+    width: 79px !important;
+    opacity: 0;
+  }
+}
