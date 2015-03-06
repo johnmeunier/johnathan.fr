@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+    <link rel="icon" type="image/png" href="/src/img/logo/johnathan_meunier_small.png" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
     <script src="/js/jquery.min.js"></script>
@@ -20,7 +20,7 @@
     {% include header.html %}
     <div id="content">
       <div class="row-med realisations">
-        <h2> Ce que j'ai fait </h2>
+        <h2> Ce que j'ai fait récemment</h2>
         <div class="row">
           {% for realisation in site.data.realisations limit:3 %}
             <div class="thumbail">
