@@ -13,6 +13,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/typeWriter.js"></script>
   </head>
   <body>
     {% include header.html %}
@@ -22,8 +24,12 @@
         <div class="row">
           {% for realisation in site.data.realisations limit:3 %}
             <div class="thumbail">
-              <img src="{{realisation[1].image}}" alt="{{realisation[1].description}}">
-              <h3> {{realisation[1].name}} </h3>
+              <a href="/realisations/#{{realisation[1].id}}">
+                <img src="{{realisation[1].image}}" alt="{{realisation[1].description}}">
+              </a>
+              <a href="/realisation#{{realisation[1].id}}">
+                <h3> {{realisation[1].name}} </h3>
+              </a>
               <p> {{realisation[1].description}} </p>
             </div>
           {% endfor %}

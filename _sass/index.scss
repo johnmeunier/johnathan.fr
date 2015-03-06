@@ -2,8 +2,14 @@
 @import 'fonts';
 @import 'header';
 @import 'footer';
+
+
+.realisations img{
+  width: 300px;
+  height: 300px;
+}
 .realisations h3{
-  margin-top: 55px;
+  margin-top: 35px;
 }
 .quote{
   display: block;

@@ -1,0 +1,21 @@
+---
+layout: pageTemplate
+---
+
+  <div class="posts">
+    {% for realisation in site.data.realisations %}
+      <article id="{{realisation[1].id}}">
+        <div class="post realisation">
+          <div class="image">
+            <img src="{{realisation[1].image}}" alt="">
+          </div>
+          <div class="text">
+            <h2>{{realisation[1].name}}</h2>
+            <h3>{{realisation[1].description}}</h3>
+            <div>{{realisation[1].whatIDo}}</div>
+            <h4><a href="{{realisation[1].link}}"> Aller sur {{realisation[1].name}} </a></h4>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>

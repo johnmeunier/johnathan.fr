@@ -1,17 +1,20 @@
 lilleweb:
+  id: lilleweb
   name: Lille Web
   description: Structure de partage de ressources web
   whatIDo : Lorem ipsum sit dolor amet ...
-  image: http://lorempixel.com/300/300/sports/
+  image: /src/img/realisation/LilleWeb.jpg
   link: http://www.lilleweb.fr
 altiboard:
+  id: altiboard
   name: altiboard°
   description: Dashboard analytics
   whatIDo : Lorem ipsum sit dolor amet ...
-  image: http://lorempixel.com/300/300/sports/
+  image: /src/img/realisation/altiboard.jpg
   link: http://www.altiboard.com/
 cdp:
+  id: cdp
   name: Camping des Poteries
   description: Sites vitrine d'un camping dans le Nord
-  image: http://lorempixel.com/300/300/sports/
+  image: /src/img/realisation/camping.jpg
   link: http://www.campingdespoteries.fr/

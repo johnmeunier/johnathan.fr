@@ -2,7 +2,7 @@
 layout: pageTemplate
 ---
 
-  <ul class="posts">
+  <div class="posts">
     {% for post in paginator.posts %}
       <article>
         <div class="post">
@@ -25,10 +25,10 @@ layout: pageTemplate
           <div class="post_content">
              {{ post.content }}
           </div>
-        <post>
+        </div>
       </article>
     {% endfor %}
-  </ul>
+  </div>
 
   {% if paginator.total_pages > 1 %}
   <ul class="pagination">

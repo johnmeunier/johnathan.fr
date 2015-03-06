@@ -17,6 +17,10 @@ header{
       font-size: 25px;
       a{
         color : #FFF;
+        img{
+          width: 30px;
+          margin-left: 20px;
+        }
       }
     }
     .fixedRight a{
@@ -38,12 +42,12 @@ header{
     h1{
       font-size: 70px;
       font-family: 'RobotoThin';
-      span{
+      /*span{
         display: none;
         &:first-child{
           display: inline-block;
         }
-      }
+      }*/
     }
     @import 'socialNetwork';
   }
