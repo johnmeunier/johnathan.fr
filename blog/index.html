@@ -6,7 +6,7 @@ layout: pageTemplate
     {% for post in paginator.posts %}
       <article>
         <div class="post">
-          <h2 class="post_title"><a href="http://johnathan.fr/blog/_site{{ post.url }}">{{ post.title }}</a></h2>
+          <h2 class="post_title">{{ post.title }}</h2>
           <h4 class="post_date">{{ post.date | date_to_string }}</h4>
           <div class="shareTwitter">
 

@@ -50,9 +50,14 @@ h4{
   margin: 15px 0px;
 }
 
-p{
+p, li{
   font-family: 'RobotoRegular';
   font-size: 15px;
+  margin : 10px 0px;
+  line-height: 17px;
+}
+li{
+  margin : 0px;
 }
 
 .quote h3{
