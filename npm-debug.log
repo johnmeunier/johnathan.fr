@@ -1,0 +1,1590 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'qrcode' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'qrcode', null ]
+5 verbose cache add name=undefined spec="qrcode" args=["qrcode",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'qrcode',
+6 verbose parsed url   path: 'qrcode',
+6 verbose parsed url   href: 'qrcode' }
+7 silly lockFile 73b35df1-qrcode qrcode
+8 verbose lock qrcode /Users/johnathan/.npm/73b35df1-qrcode.lock
+9 silly lockFile 73b35df1-qrcode qrcode
+10 silly lockFile 73b35df1-qrcode qrcode
+11 verbose addNamed [ 'qrcode', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 2ca56d64-qrcode qrcode@
+14 verbose lock qrcode@ /Users/johnathan/.npm/2ca56d64-qrcode.lock
+15 silly addNameRange { name: 'qrcode', range: '*', hasData: false }
+16 verbose url raw qrcode
+17 verbose url resolving [ 'https://registry.npmjs.org/', './qrcode' ]
+18 verbose url resolved https://registry.npmjs.org/qrcode
+19 info trying registry request attempt 1 at 10:45:14
+20 verbose etag "1F6IRBEVDGG9M6NVCDDB9VUGQ"
+21 http GET https://registry.npmjs.org/qrcode
+22 http 304 https://registry.npmjs.org/qrcode
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Sat, 14 Mar 2015 09:45:14 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Sat, 14 Mar 2015 09:45:14 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"1F6IRBEVDGG9M6NVCDDB9VUGQ"',
+23 silly registry.get     age: '16',
+23 silly registry.get     'x-served-by': 'cache-fra1230-FRA',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1426326314.609926,VS0,VE0',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag qrcode from cache
+25 silly addNameRange number 2 { name: 'qrcode', range: '*', hasData: true }
+26 silly addNameRange versions [ 'qrcode',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.2.5',
+26 silly addNameRange     '0.2.6',
+26 silly addNameRange     '0.2.7',
+26 silly addNameRange     '0.2.8',
+26 silly addNameRange     '0.2.9',
+26 silly addNameRange     '0.2.10',
+26 silly addNameRange     '0.2.11',
+26 silly addNameRange     '0.2.12' ] ]
+27 verbose addNamed [ 'qrcode', '0.2.12' ]
+28 verbose addNamed [ '0.2.12', '0.2.12' ]
+29 silly lockFile 880108f3-qrcode-0-2-12 qrcode@0.2.12
+30 verbose lock qrcode@0.2.12 /Users/johnathan/.npm/880108f3-qrcode-0-2-12.lock
+31 silly lockFile 880108f3-qrcode-0-2-12 qrcode@0.2.12
+32 silly lockFile 880108f3-qrcode-0-2-12 qrcode@0.2.12
+33 silly lockFile 2ca56d64-qrcode qrcode@
+34 silly lockFile 2ca56d64-qrcode qrcode@
+35 silly resolved [ { name: 'qrcode',
+35 silly resolved     description: 'QRCode / 2d Barcode api with both server side and client side support using canvas',
+35 silly resolved     version: '0.2.12',
+35 silly resolved     author: { name: 'Ryan Day', email: 'soldair@gmail.com' },
+35 silly resolved     keywords: [ 'canvas', 'qrcode', 'barcode' ],
+35 silly resolved     main: './qrcode.js',
+35 silly resolved     homepage: 'http://github.com/soldair/node-qrcode',
+35 silly resolved     scripts:
+35 silly resolved      { pretest: 'node build.js',
+35 silly resolved        prepublish: 'node build.js',
+35 silly resolved        test: 'tap test/url.js' },
+35 silly resolved     bin: { qrcode: './bin/qrcode' },
+35 silly resolved     dependencies: { canvas: '~1.1.6', colors: '*', bops: '0.0.6' },
+35 silly resolved     devDependencies:
+35 silly resolved      { express: '2.5.x',
+35 silly resolved        browserify: '~2.29.0',
+35 silly resolved        'uglify-js': '1.2.x',
+35 silly resolved        canvasutil: '*',
+35 silly resolved        tap: '*' },
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/soldair/node-qrcode.git' },
+35 silly resolved     engines: { node: '>= 0.6.0' },
+35 silly resolved     readme: '[![Build Status](https://secure.travis-ci.org/soldair/node-qrcode.png)](http://travis-ci.org/soldair/node-qrcode)\n\n\nnode-qrcode\n=\n\nThis is a server side QR code/2d barcode generator.\n\nIt is an extension of "QRCode for JavaScript" which Kazuhiko Arase thankfully MIT licensed.\n\nThe `qrcode-draw.js` can be used  directly as a client side lib if its appended too or included with `lib/qrcode.js`.\n\nTo use this on the server side please `require(\'qrcode\');` =)\n\nExamples\n--------\nA simple server side test...\n\n    var QRCode = require(\'qrcode\');\n    \n    QRCode.toDataURL(\'i am a pony!\',function(err,url){\n        console.log(url);\n    });\n\n\nIn your terminal if you install globally...\n\n\n    qrcode "hi i want a qrcode"\n    \n    qrcode "i like to save qrs to file" qr.png\n\n\nIn client side HTML...\n\n\n    <!--[if ie]><script type="text/javascript" src="/vendors/excanvas/excanvas.js"></script><![endif]-->\n    <script src="/build/qrcode.js"></script>\n    <canvas id="test"></canvas>\n    <script>\n    \n    var qrcodedraw = new QRCodeLib.QRCodeDraw();\n    \n    qrcodedraw.draw(document.getElementById(\'test\'),"this text will be in the code!", function(error,canvas){\n      if(error){\n         return console.log(\'Error =( \',error);\n      }\n      console.log(\'success!\');\n    });\n    </script>\n\n\nRemember to put `excanvas.js` and `qrcode.js` somewhere where your browser can find them.\n\nServer Side API\n---\n\n    QRCode.draw(text, [optional options], cb(error,canvas));\nReturns a node canvas object see https://github.com/LearnBoost/node-canvas for all of the cool node things you can do. Look up the canvas api for the other cool things.\n    \n    QRCode.toDataURL(text, [optional options], cb(error,dataURL));\nReturns mime image/png data url for the 2d barcode.\n    \n    QRCode.save(path, text, [optional options] , cb(error,written));\nSaves png to the path specified returns bytes written.\n    \n    QRCode.drawText(text, [optional options],cb)\nReturns an ascii representation of the qrcode using unicode characters and ansi control codes for background control.\n    \n    QRCode.drawBitArray(text, [optional options], cb(error,bits,width));\nReturns an array with each value being either 0 light or 1 dark and the width of each row.\nThis is enough info to render a qrcode any way you want. =)\n\n\nOptions\n---------\n\n    errorCorrectLevel\n\nCan be one of the values in `qrcode.errorCorrectLevel`.\nCan be a string. one of `"minimum","medium","high","max"`.\nIf `undefined`, defaults to H which is max error correction.\nIf invalid value, defaults to minimum error correction.\n\nclient side api\n---------------\n\n    window.qrcodelib\n\n`qrcodelib.qrcodedraw()` Constructor\n\n    qrcode = new qrcodelib.qrcodedraw()\n    qrcode.draw(canvasElement,text,[optional options],cb);\n\n\nFor quick client side use...\n\n    node test/clientsideserver.js\n    open http://localhost:3031\n\nThe JavaScript is in `test/clientside.html`.\n\nQR code capacity\n---\n\nThis libary can encode this many bytes at each error correct level:\n\n- 2953 in error correct level L\n- 2331 in error correct level M\n- 1663 in error correct level Q\n- 1273 in error correct level H\n\nThe default is H. \n\nplease note as pointed out by @giacecco that byte length is often greater than string length due to multibyte characters.\n\n```js\n// so use the byte length\n(new Buffer(str)).length\n\n// instead of the string length\nstr.length \n```\n\nIt can now be changed in an ugly way that wont be supported for more then another few days if you really need to. Also the default module size at qr version 40 is really too small for the camera on my Nexus 1 and to make it larger i run out of screen to show it. At 40 the barcode scanner even finds random UPC 1d barcodes in the mass of little squares.\nthe default module size cannot be changed through the public api at this time.\n\nInstallation\n--\n\n    npm install qrcode\nTo use qrcode from the command line to save  qrcode images or generate ones you can view in your terminal...\n\n    npm install -g qrcode \n`node-canvas` is a native module and requires dev packages of `cairo` and `pixman` to compile. \n On ubuntu you can install them with `apt-get` and `npm install` will work great.\n  \n\n    sudo apt-get install libpixman-1-dev libcairo2-dev\nIt is my higest priority for this module to use an all `js` png encoder and remove this dep.\n\n\nDependencies\n------------\nThese should be taken care of for you by npm but you should...\n\n    npm install canvas\n\nIf `cairo` gives you trouble and you cannot install `canvas`, checkout the canvas site. I know @tjholowaychuk has setup a way to download and install a version of cairo/pixman for testing.\n\nThe word "QR Code" is registered trademark of:\n\nDENSO WAVE INCORPORATED\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     bugs: { url: 'https://github.com/soldair/node-qrcode/issues' },
+35 silly resolved     _id: 'qrcode@0.2.12',
+35 silly resolved     _from: 'qrcode@' } ]
+36 info install qrcode@0.2.12 into /usr/local/lib
+37 info installOne qrcode@0.2.12
+38 info /usr/local/lib/node_modules/qrcode unbuild
+39 verbose tar unpack /Users/johnathan/.npm/qrcode/0.2.12/package.tgz
+40 silly lockFile 63b26d8e-sr-local-lib-node-modules-qrcode tar:///usr/local/lib/node_modules/qrcode
+41 verbose lock tar:///usr/local/lib/node_modules/qrcode /Users/johnathan/.npm/63b26d8e-sr-local-lib-node-modules-qrcode.lock
+42 silly lockFile 5034a9be-an-npm-qrcode-0-2-12-package-tgz tar:///Users/johnathan/.npm/qrcode/0.2.12/package.tgz
+43 verbose lock tar:///Users/johnathan/.npm/qrcode/0.2.12/package.tgz /Users/johnathan/.npm/5034a9be-an-npm-qrcode-0-2-12-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry a.js
+49 silly gunzTarPerm extractEntry b.js
+50 silly gunzTarPerm extractEntry build.js
+51 silly gunzTarPerm extractEntry qrcode.js
+52 silly gunzTarPerm extractEntry qrcodeclient.js
+53 silly gunzTarPerm extractEntry file.txt
+54 silly gunzTarPerm extractEntry .jshintignore
+55 silly gunzTarPerm extractEntry hi.png
+56 silly gunzTarPerm extractEntry lib/qrcapacitytable.js
+57 silly gunzTarPerm extractEntry lib/qrcode-draw.js
+58 silly gunzTarPerm extractEntry lib/qrcode.js
+59 silly gunzTarPerm extractEntry lib/termialrender.js
+60 silly gunzTarPerm extractEntry bin/qrcode
+61 silly gunzTarPerm extractEntry build/qrcode.js
+62 silly gunzTarPerm extractEntry build/qrcode.min.js
+63 silly gunzTarPerm extractEntry build/.g
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm extractEntry test/cli.js
+66 silly gunzTarPerm extractEntry test/clientsideserver.js
+67 silly gunzTarPerm extractEntry test/save.js
+68 silly gunzTarPerm extractEntry test/server.js
+69 silly gunzTarPerm extractEntry test/url.js
+70 silly gunzTarPerm extractEntry test/clientside.html
+71 silly gunzTarPerm extractEntry test/fixtures/bacon-bikini.png
+72 silly gunzTarPerm extractEntry test/fixtures/bacon-love.png
+73 silly gunzTarPerm extractEntry test.html
+74 silly gunzTarPerm extractEntry test.png
+75 silly gunzTarPerm extractEntry vendors/excanvas/README
+76 silly gunzTarPerm extractEntry vendors/excanvas/excanvas.compiled.js
+77 silly gunzTarPerm extractEntry vendors/excanvas/excanvas.js
+78 silly lockFile 63b26d8e-sr-local-lib-node-modules-qrcode tar:///usr/local/lib/node_modules/qrcode
+79 silly lockFile 63b26d8e-sr-local-lib-node-modules-qrcode tar:///usr/local/lib/node_modules/qrcode
+80 silly lockFile 5034a9be-an-npm-qrcode-0-2-12-package-tgz tar:///Users/johnathan/.npm/qrcode/0.2.12/package.tgz
+81 silly lockFile 5034a9be-an-npm-qrcode-0-2-12-package-tgz tar:///Users/johnathan/.npm/qrcode/0.2.12/package.tgz
+82 info preinstall qrcode@0.2.12
+83 verbose readDependencies using package.json deps
+84 verbose readDependencies using package.json deps
+85 verbose cache add [ 'canvas@~1.1.6', null ]
+86 verbose cache add name=undefined spec="canvas@~1.1.6" args=["canvas@~1.1.6",null]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: 'canvas@~1.1.6',
+87 verbose parsed url   path: 'canvas@~1.1.6',
+87 verbose parsed url   href: 'canvas@~1.1.6' }
+88 verbose cache add name="canvas" spec="~1.1.6" args=["canvas","~1.1.6"]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: '~1.1.6',
+89 verbose parsed url   path: '~1.1.6',
+89 verbose parsed url   href: '~1.1.6' }
+90 verbose addNamed [ 'canvas', '~1.1.6' ]
+91 verbose addNamed [ null, '>=1.1.6-0 <1.2.0-0' ]
+92 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+93 verbose lock canvas@~1.1.6 /Users/johnathan/.npm/327e4225-canvas-1-1-6.lock
+94 verbose cache add [ 'colors@*', null ]
+95 verbose cache add name=undefined spec="colors@*" args=["colors@*",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'colors@*',
+96 verbose parsed url   path: 'colors@*',
+96 verbose parsed url   href: 'colors@*' }
+97 verbose cache add name="colors" spec="*" args=["colors","*"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '*',
+98 verbose parsed url   path: '*',
+98 verbose parsed url   href: '*' }
+99 verbose addNamed [ 'colors', '*' ]
+100 verbose addNamed [ null, '*' ]
+101 silly lockFile 9ee7deec-colors colors@*
+102 verbose lock colors@* /Users/johnathan/.npm/9ee7deec-colors.lock
+103 verbose cache add [ 'bops@0.0.6', null ]
+104 verbose cache add name=undefined spec="bops@0.0.6" args=["bops@0.0.6",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'bops@0.0.6',
+105 verbose parsed url   path: 'bops@0.0.6',
+105 verbose parsed url   href: 'bops@0.0.6' }
+106 verbose cache add name="bops" spec="0.0.6" args=["bops","0.0.6"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '0.0.6',
+107 verbose parsed url   path: '0.0.6',
+107 verbose parsed url   href: '0.0.6' }
+108 verbose addNamed [ 'bops', '0.0.6' ]
+109 verbose addNamed [ '0.0.6', '0.0.6' ]
+110 silly lockFile f7ce2a2d-bops-0-0-6 bops@0.0.6
+111 verbose lock bops@0.0.6 /Users/johnathan/.npm/f7ce2a2d-bops-0-0-6.lock
+112 silly addNameRange { name: 'canvas', range: '>=1.1.6-0 <1.2.0-0', hasData: false }
+113 silly addNameRange { name: 'colors', range: '*', hasData: false }
+114 verbose url raw canvas
+115 verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
+116 verbose url resolved https://registry.npmjs.org/canvas
+117 info trying registry request attempt 1 at 10:46:00
+118 http GET https://registry.npmjs.org/canvas
+119 verbose url raw bops/0.0.6
+120 verbose url resolving [ 'https://registry.npmjs.org/', './bops/0.0.6' ]
+121 verbose url resolved https://registry.npmjs.org/bops/0.0.6
+122 info trying registry request attempt 1 at 10:46:00
+123 http GET https://registry.npmjs.org/bops/0.0.6
+124 verbose url raw colors
+125 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+126 verbose url resolved https://registry.npmjs.org/colors
+127 info trying registry request attempt 1 at 10:46:00
+128 verbose etag "AN60N3JP82DF1HMH53SH2ZHOB"
+129 http GET https://registry.npmjs.org/colors
+130 http 200 https://registry.npmjs.org/colors
+131 silly registry.get cb [ 200,
+131 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:00 GMT',
+131 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+131 silly registry.get     etag: '"3XI87UF1YE1T67SZ2EYH3WCZQ"',
+131 silly registry.get     'content-type': 'application/json',
+131 silly registry.get     'cache-control': 'max-age=60',
+131 silly registry.get     'content-length': '16099',
+131 silly registry.get     'accept-ranges': 'bytes',
+131 silly registry.get     via: '1.1 varnish',
+131 silly registry.get     age: '50',
+131 silly registry.get     'x-served-by': 'cache-fra1222-FRA',
+131 silly registry.get     'x-cache': 'HIT',
+131 silly registry.get     'x-cache-hits': '2',
+131 silly registry.get     'x-timer': 'S1426326360.450061,VS0,VE0',
+131 silly registry.get     vary: 'Accept',
+131 silly registry.get     'keep-alive': 'timeout=10, max=50',
+131 silly registry.get     connection: 'Keep-Alive' } ]
+132 silly addNameRange number 2 { name: 'colors', range: '*', hasData: true }
+133 silly addNameRange versions [ 'colors',
+133 silly addNameRange   [ '0.3.0',
+133 silly addNameRange     '0.5.0',
+133 silly addNameRange     '0.5.1',
+133 silly addNameRange     '0.6.0',
+133 silly addNameRange     '0.6.0-1',
+133 silly addNameRange     '0.6.1',
+133 silly addNameRange     '0.6.2',
+133 silly addNameRange     '1.0.0',
+133 silly addNameRange     '1.0.1',
+133 silly addNameRange     '1.0.2',
+133 silly addNameRange     '1.0.3' ] ]
+134 verbose addNamed [ 'colors', '1.0.3' ]
+135 verbose addNamed [ '1.0.3', '1.0.3' ]
+136 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+137 verbose lock colors@1.0.3 /Users/johnathan/.npm/2ed681a9-colors-1-0-3.lock
+138 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+139 verbose lock https://registry.npmjs.org/colors/-/colors-1.0.3.tgz /Users/johnathan/.npm/51fc380f-pmjs-org-colors-colors-1-0-3-tgz.lock
+140 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-1.0.3.tgz',
+140 verbose addRemoteTarball   '0433f44d809680fdeb60ed260f1b0c262e82a40b' ]
+141 info retry fetch attempt 1 at 10:46:00
+142 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz
+143 http GET https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+144 http 200 https://registry.npmjs.org/bops/0.0.6
+145 silly registry.get cb [ 200,
+145 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:00 GMT',
+145 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+145 silly registry.get     etag: '"BZA3YQVGMUFXLTVG6UXXHZXWQ"',
+145 silly registry.get     'content-type': 'application/json',
+145 silly registry.get     'cache-control': 'max-age=60',
+145 silly registry.get     'content-length': '1332',
+145 silly registry.get     'accept-ranges': 'bytes',
+145 silly registry.get     via: '1.1 varnish',
+145 silly registry.get     age: '0',
+145 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+145 silly registry.get     'x-cache': 'HIT',
+145 silly registry.get     'x-cache-hits': '1',
+145 silly registry.get     'x-timer': 'S1426326360.449951,VS0,VE178',
+145 silly registry.get     vary: 'Accept',
+145 silly registry.get     'keep-alive': 'timeout=10, max=50',
+145 silly registry.get     connection: 'Keep-Alive' } ]
+146 silly lockFile ca68abd3-ry-npmjs-org-bops-bops-0-0-6-tgz https://registry.npmjs.org/bops/-/bops-0.0.6.tgz
+147 verbose lock https://registry.npmjs.org/bops/-/bops-0.0.6.tgz /Users/johnathan/.npm/ca68abd3-ry-npmjs-org-bops-bops-0-0-6-tgz.lock
+148 verbose addRemoteTarball [ 'https://registry.npmjs.org/bops/-/bops-0.0.6.tgz',
+148 verbose addRemoteTarball   '082d1d55fa01e60dbdc2ebc2dba37f659554cf3a' ]
+149 info retry fetch attempt 1 at 10:46:00
+150 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz
+151 http GET https://registry.npmjs.org/bops/-/bops-0.0.6.tgz
+152 http 200 https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+153 http 200 https://registry.npmjs.org/canvas
+154 silly registry.get cb [ 200,
+154 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:00 GMT',
+154 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+154 silly registry.get     etag: '"B4COK96IJEQR05W3JNC3CJ3EP"',
+154 silly registry.get     'content-type': 'application/json',
+154 silly registry.get     'cache-control': 'max-age=60',
+154 silly registry.get     'content-length': '65964',
+154 silly registry.get     'accept-ranges': 'bytes',
+154 silly registry.get     via: '1.1 varnish',
+154 silly registry.get     age: '0',
+154 silly registry.get     'x-served-by': 'cache-fra1233-FRA',
+154 silly registry.get     'x-cache': 'MISS',
+154 silly registry.get     'x-cache-hits': '0',
+154 silly registry.get     'x-timer': 'S1426326360.437069,VS0,VE168',
+154 silly registry.get     vary: 'Accept',
+154 silly registry.get     'keep-alive': 'timeout=10, max=50',
+154 silly registry.get     connection: 'Keep-Alive' } ]
+155 silly addNameRange number 2 { name: 'canvas', range: '>=1.1.6-0 <1.2.0-0', hasData: true }
+156 silly addNameRange versions [ 'canvas',
+156 silly addNameRange   [ '0.0.1',
+156 silly addNameRange     '0.0.2',
+156 silly addNameRange     '0.0.3',
+156 silly addNameRange     '0.0.4',
+156 silly addNameRange     '0.0.5',
+156 silly addNameRange     '0.0.6',
+156 silly addNameRange     '0.0.7',
+156 silly addNameRange     '0.0.8',
+156 silly addNameRange     '0.1.0',
+156 silly addNameRange     '0.2.0',
+156 silly addNameRange     '0.2.1',
+156 silly addNameRange     '0.3.0',
+156 silly addNameRange     '0.3.1',
+156 silly addNameRange     '0.3.2',
+156 silly addNameRange     '0.3.3',
+156 silly addNameRange     '0.4.0',
+156 silly addNameRange     '0.4.1',
+156 silly addNameRange     '0.4.2',
+156 silly addNameRange     '0.4.3',
+156 silly addNameRange     '0.5.0',
+156 silly addNameRange     '0.5.1',
+156 silly addNameRange     '0.5.2',
+156 silly addNameRange     '0.5.3',
+156 silly addNameRange     '0.5.4',
+156 silly addNameRange     '0.6.0',
+156 silly addNameRange     '0.7.0',
+156 silly addNameRange     '0.7.1',
+156 silly addNameRange     '0.7.2',
+156 silly addNameRange     '0.7.3',
+156 silly addNameRange     '0.8.0',
+156 silly addNameRange     '0.8.1',
+156 silly addNameRange     '0.8.2',
+156 silly addNameRange     '0.8.3',
+156 silly addNameRange     '0.9.0',
+156 silly addNameRange     '0.10.0',
+156 silly addNameRange     '0.10.1',
+156 silly addNameRange     '0.10.2',
+156 silly addNameRange     '0.10.3',
+156 silly addNameRange     '0.11.0',
+156 silly addNameRange     '0.11.1',
+156 silly addNameRange     '0.11.2',
+156 silly addNameRange     '0.11.3',
+156 silly addNameRange     '0.12.0',
+156 silly addNameRange     '0.12.1',
+156 silly addNameRange     '0.13.0',
+156 silly addNameRange     '0.13.1',
+156 silly addNameRange     '1.0.0',
+156 silly addNameRange     '1.0.1',
+156 silly addNameRange     '1.0.2',
+156 silly addNameRange     '1.0.3',
+156 silly addNameRange     '1.0.4',
+156 silly addNameRange     '1.1.0',
+156 silly addNameRange     '1.1.1',
+156 silly addNameRange     '1.1.2',
+156 silly addNameRange     '1.1.3',
+156 silly addNameRange     '1.1.4',
+156 silly addNameRange     '1.1.5',
+156 silly addNameRange     '1.1.6',
+156 silly addNameRange     '1.2.0',
+156 silly addNameRange     '1.2.1' ] ]
+157 verbose addNamed [ 'canvas', '1.1.6' ]
+158 verbose addNamed [ '1.1.6', '1.1.6' ]
+159 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+160 verbose lock canvas@1.1.6 /Users/johnathan/.npm/4f76786f-canvas-1-1-6.lock
+161 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+162 verbose lock https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz /Users/johnathan/.npm/893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz.lock
+163 verbose addRemoteTarball [ 'https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz',
+163 verbose addRemoteTarball   'd84b088f3bcd3840fe14977cd3625f5fe89f81ee' ]
+164 info retry fetch attempt 1 at 10:46:00
+165 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz
+166 http GET https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+167 http 200 https://registry.npmjs.org/bops/-/bops-0.0.6.tgz
+168 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz
+169 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+170 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package /Users/johnathan/.npm/5c2ece49-60502-0-1185405827127397-package.lock
+171 silly lockFile 977ebed0-60502-0-1185405827127397-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz
+172 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz /Users/johnathan/.npm/977ebed0-60502-0-1185405827127397-tmp-tgz.lock
+173 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz
+174 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+175 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package /Users/johnathan/.npm/16c9ff8b-60641-0-5249862493947148-package.lock
+176 silly lockFile f2bc9a64-60641-0-5249862493947148-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz
+177 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz /Users/johnathan/.npm/f2bc9a64-60641-0-5249862493947148-tmp-tgz.lock
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 silly gunzTarPerm modes [ '755', '644' ]
+180 silly gunzTarPerm extractEntry package.json
+181 silly gunzTarPerm extractEntry package.json
+182 silly gunzTarPerm extractEntry safe.js
+183 silly gunzTarPerm extractEntry .travis.yml
+184 silly gunzTarPerm extractEntry README.md
+185 silly gunzTarPerm extractEntry copy.js
+186 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+187 silly gunzTarPerm extractEntry ReadMe.md
+188 silly gunzTarPerm extractEntry from.js
+189 silly gunzTarPerm extractEntry index.js
+190 silly gunzTarPerm extractEntry examples/normal-usage.js
+191 silly gunzTarPerm extractEntry examples/safe-string.js
+192 silly gunzTarPerm extractEntry is.js
+193 silly gunzTarPerm extractEntry join.js
+194 silly gunzTarPerm extractEntry lib/colors.js
+195 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+196 silly gunzTarPerm extractEntry create.js
+197 silly gunzTarPerm extractEntry subarray.js
+198 silly gunzTarPerm extractEntry lib/index.js
+199 silly gunzTarPerm extractEntry lib/styles.js
+200 silly gunzTarPerm extractEntry to.js
+201 silly gunzTarPerm extractEntry write.js
+202 silly gunzTarPerm extractEntry read.js
+203 silly gunzTarPerm extractEntry test/copy.js
+204 silly gunzTarPerm extractEntry lib/custom/trap.js
+205 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+206 silly gunzTarPerm extractEntry test/create.js
+207 silly gunzTarPerm extractEntry lib/maps/america.js
+208 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+209 silly gunzTarPerm extractEntry test/from.js
+210 silly gunzTarPerm extractEntry test/index.js
+211 silly gunzTarPerm extractEntry lib/maps/random.js
+212 silly gunzTarPerm extractEntry lib/maps/zebra.js
+213 silly gunzTarPerm extractEntry test/is.js
+214 silly gunzTarPerm extractEntry test/join.js
+215 silly gunzTarPerm extractEntry test/read.js
+216 silly gunzTarPerm extractEntry test/subarray.js
+217 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+218 silly gunzTarPerm extractEntry screenshots/colors.png
+219 silly gunzTarPerm extractEntry test/to.js
+220 silly gunzTarPerm extractEntry test/write.js
+221 silly gunzTarPerm extractEntry typedarray/copy.js
+222 silly gunzTarPerm extractEntry typedarray/create.js
+223 silly gunzTarPerm extractEntry tests/basic-test.js
+224 silly gunzTarPerm extractEntry tests/safe-test.js
+225 silly gunzTarPerm extractEntry typedarray/from.js
+226 silly gunzTarPerm extractEntry typedarray/is.js
+227 silly gunzTarPerm extractEntry themes/generic-logging.js
+228 silly gunzTarPerm extractEntry typedarray/join.js
+229 silly gunzTarPerm extractEntry typedarray/mapped.js
+230 silly gunzTarPerm extractEntry typedarray/read.js
+231 silly gunzTarPerm extractEntry typedarray/subarray.js
+232 silly gunzTarPerm extractEntry typedarray/to.js
+233 silly gunzTarPerm extractEntry typedarray/write.js
+234 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+235 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+236 silly lockFile f2bc9a64-60641-0-5249862493947148-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz
+237 silly lockFile f2bc9a64-60641-0-5249862493947148-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/tmp.tgz
+238 verbose tar pack [ '/Users/johnathan/.npm/bops/0.0.6/package.tgz',
+238 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package' ]
+239 verbose tarball /Users/johnathan/.npm/bops/0.0.6/package.tgz
+240 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+241 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+242 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package /Users/johnathan/.npm/16c9ff8b-60641-0-5249862493947148-package.lock
+243 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+244 verbose lock tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz /Users/johnathan/.npm/7cbd3722-athan-npm-bops-0-0-6-package-tgz.lock
+245 http 200 https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+246 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+247 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+248 silly lockFile 977ebed0-60502-0-1185405827127397-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz
+249 silly lockFile 977ebed0-60502-0-1185405827127397-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/tmp.tgz
+250 verbose tar pack [ '/Users/johnathan/.npm/colors/1.0.3/package.tgz',
+250 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package' ]
+251 verbose tarball /Users/johnathan/.npm/colors/1.0.3/package.tgz
+252 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+253 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+254 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package /Users/johnathan/.npm/5c2ece49-60502-0-1185405827127397-package.lock
+255 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+256 verbose lock tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz /Users/johnathan/.npm/75b160c9-han-npm-colors-1-0-3-package-tgz.lock
+257 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+258 silly lockFile 16c9ff8b-60641-0-5249862493947148-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360641-0.5249862493947148/package
+259 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+260 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+261 silly lockFile 050565f2-johnathan-npm-bops-0-0-6-package /Users/johnathan/.npm/bops/0.0.6/package
+262 verbose lock /Users/johnathan/.npm/bops/0.0.6/package /Users/johnathan/.npm/050565f2-johnathan-npm-bops-0-0-6-package.lock
+263 silly lockFile 050565f2-johnathan-npm-bops-0-0-6-package /Users/johnathan/.npm/bops/0.0.6/package
+264 silly lockFile 050565f2-johnathan-npm-bops-0-0-6-package /Users/johnathan/.npm/bops/0.0.6/package
+265 verbose tar unpack /Users/johnathan/.npm/bops/0.0.6/package.tgz
+266 silly lockFile 03aed1c2-johnathan-npm-bops-0-0-6-package tar:///Users/johnathan/.npm/bops/0.0.6/package
+267 verbose lock tar:///Users/johnathan/.npm/bops/0.0.6/package /Users/johnathan/.npm/03aed1c2-johnathan-npm-bops-0-0-6-package.lock
+268 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+269 verbose lock tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz /Users/johnathan/.npm/7cbd3722-athan-npm-bops-0-0-6-package-tgz.lock
+270 silly gunzTarPerm modes [ '755', '644' ]
+271 silly gunzTarPerm extractEntry package.json
+272 silly gunzTarPerm extractEntry README.md
+273 silly gunzTarPerm extractEntry create.js
+274 silly gunzTarPerm extractEntry index.js
+275 silly gunzTarPerm extractEntry is.js
+276 silly gunzTarPerm extractEntry join.js
+277 silly gunzTarPerm extractEntry copy.js
+278 silly gunzTarPerm extractEntry from.js
+279 silly gunzTarPerm extractEntry subarray.js
+280 silly gunzTarPerm extractEntry to.js
+281 silly gunzTarPerm extractEntry write.js
+282 silly gunzTarPerm extractEntry read.js
+283 silly gunzTarPerm extractEntry test/copy.js
+284 silly gunzTarPerm extractEntry test/create.js
+285 silly gunzTarPerm extractEntry test/from.js
+286 silly gunzTarPerm extractEntry test/index.js
+287 silly gunzTarPerm extractEntry test/is.js
+288 silly gunzTarPerm extractEntry test/join.js
+289 silly gunzTarPerm extractEntry test/read.js
+290 silly gunzTarPerm extractEntry test/subarray.js
+291 silly gunzTarPerm extractEntry test/to.js
+292 silly gunzTarPerm extractEntry test/write.js
+293 silly gunzTarPerm extractEntry typedarray/copy.js
+294 silly gunzTarPerm extractEntry typedarray/create.js
+295 silly gunzTarPerm extractEntry typedarray/from.js
+296 silly gunzTarPerm extractEntry typedarray/is.js
+297 silly gunzTarPerm extractEntry typedarray/join.js
+298 silly gunzTarPerm extractEntry typedarray/mapped.js
+299 silly gunzTarPerm extractEntry typedarray/read.js
+300 silly gunzTarPerm extractEntry typedarray/subarray.js
+301 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+302 silly lockFile 5c2ece49-60502-0-1185405827127397-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360502-0.1185405827127397/package
+303 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+304 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+305 silly gunzTarPerm extractEntry typedarray/to.js
+306 silly gunzTarPerm extractEntry typedarray/write.js
+307 silly lockFile 113b5646-hnathan-npm-colors-1-0-3-package /Users/johnathan/.npm/colors/1.0.3/package
+308 verbose lock /Users/johnathan/.npm/colors/1.0.3/package /Users/johnathan/.npm/113b5646-hnathan-npm-colors-1-0-3-package.lock
+309 silly lockFile 113b5646-hnathan-npm-colors-1-0-3-package /Users/johnathan/.npm/colors/1.0.3/package
+310 silly lockFile 113b5646-hnathan-npm-colors-1-0-3-package /Users/johnathan/.npm/colors/1.0.3/package
+311 verbose tar unpack /Users/johnathan/.npm/colors/1.0.3/package.tgz
+312 silly lockFile efe279fd-hnathan-npm-colors-1-0-3-package tar:///Users/johnathan/.npm/colors/1.0.3/package
+313 verbose lock tar:///Users/johnathan/.npm/colors/1.0.3/package /Users/johnathan/.npm/efe279fd-hnathan-npm-colors-1-0-3-package.lock
+314 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+315 verbose lock tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz /Users/johnathan/.npm/75b160c9-han-npm-colors-1-0-3-package-tgz.lock
+316 silly gunzTarPerm modes [ '755', '644' ]
+317 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz
+318 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+319 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package /Users/johnathan/.npm/d5bb12d2-0744-0-32831157371401787-package.lock
+320 silly lockFile 0f3f8277-0744-0-32831157371401787-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz
+321 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz /Users/johnathan/.npm/0f3f8277-0744-0-32831157371401787-tmp-tgz.lock
+322 silly gunzTarPerm extractEntry package.json
+323 silly gunzTarPerm modes [ '755', '644' ]
+324 silly gunzTarPerm extractEntry safe.js
+325 silly gunzTarPerm extractEntry .travis.yml
+326 silly gunzTarPerm extractEntry package.json
+327 silly gunzTarPerm extractEntry .npmignore
+328 silly gunzTarPerm extractEntry index.js
+329 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+330 silly gunzTarPerm extractEntry ReadMe.md
+331 silly gunzTarPerm extractEntry examples/normal-usage.js
+332 silly gunzTarPerm extractEntry examples/safe-string.js
+333 silly gunzTarPerm extractEntry History.md
+334 silly gunzTarPerm extractEntry Makefile
+335 silly gunzTarPerm extractEntry lib/colors.js
+336 silly gunzTarPerm extractEntry Readme.md
+337 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+338 silly gunzTarPerm extractEntry binding.gyp
+339 silly gunzTarPerm extractEntry .gitmodules
+340 silly gunzTarPerm extractEntry lib/index.js
+341 silly gunzTarPerm extractEntry lib/styles.js
+342 silly gunzTarPerm extractEntry lib/custom/trap.js
+343 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+344 silly gunzTarPerm extractEntry install
+345 silly gunzTarPerm extractEntry lib/bindings.js
+346 silly gunzTarPerm extractEntry lib/maps/america.js
+347 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+348 silly gunzTarPerm extractEntry lib/canvas.js
+349 silly gunzTarPerm extractEntry lib/context2d.js
+350 silly gunzTarPerm extractEntry lib/maps/random.js
+351 silly gunzTarPerm extractEntry lib/maps/zebra.js
+352 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+353 silly gunzTarPerm extractEntry screenshots/colors.png
+354 silly gunzTarPerm extractEntry lib/image.js
+355 silly gunzTarPerm extractEntry lib/jpegstream.js
+356 silly gunzTarPerm extractEntry tests/basic-test.js
+357 silly gunzTarPerm extractEntry tests/safe-test.js
+358 silly gunzTarPerm extractEntry lib/pixelarray.js
+359 silly gunzTarPerm extractEntry lib/pngstream.js
+360 silly gunzTarPerm extractEntry themes/generic-logging.js
+361 silly gunzTarPerm extractEntry src/Image.h
+362 silly gunzTarPerm extractEntry src/Canvas.cc
+363 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+364 silly gunzTarPerm extractEntry src/CanvasGradient.h
+365 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+366 silly gunzTarPerm extractEntry src/CanvasPattern.h
+367 silly lockFile 03aed1c2-johnathan-npm-bops-0-0-6-package tar:///Users/johnathan/.npm/bops/0.0.6/package
+368 silly lockFile 03aed1c2-johnathan-npm-bops-0-0-6-package tar:///Users/johnathan/.npm/bops/0.0.6/package
+369 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+370 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+371 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+372 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+373 verbose chmod /Users/johnathan/.npm/bops/0.0.6/package.tgz 644
+374 verbose chown /Users/johnathan/.npm/bops/0.0.6/package.tgz [ 501, 20 ]
+375 silly lockFile ca68abd3-ry-npmjs-org-bops-bops-0-0-6-tgz https://registry.npmjs.org/bops/-/bops-0.0.6.tgz
+376 silly lockFile ca68abd3-ry-npmjs-org-bops-bops-0-0-6-tgz https://registry.npmjs.org/bops/-/bops-0.0.6.tgz
+377 silly lockFile f7ce2a2d-bops-0-0-6 bops@0.0.6
+378 silly lockFile f7ce2a2d-bops-0-0-6 bops@0.0.6
+379 silly gunzTarPerm extractEntry src/FontFace.cc
+380 silly gunzTarPerm extractEntry src/FontFace.h
+381 silly gunzTarPerm extractEntry src/Image.cc
+382 silly gunzTarPerm extractEntry src/Canvas.h
+383 silly gunzTarPerm extractEntry src/ImageData.cc
+384 silly gunzTarPerm extractEntry src/ImageData.h
+385 silly gunzTarPerm extractEntry src/JPEGStream.h
+386 silly gunzTarPerm extractEntry src/PNG.h
+387 silly gunzTarPerm extractEntry src/PixelArray.cc
+388 silly gunzTarPerm extractEntry src/PixelArray.h
+389 silly gunzTarPerm extractEntry src/Point.h
+390 silly gunzTarPerm extractEntry src/closure.h
+391 silly gunzTarPerm extractEntry src/color.cc
+392 silly gunzTarPerm extractEntry src/color.h
+393 silly gunzTarPerm extractEntry src/init.cc
+394 silly gunzTarPerm extractEntry .travis.yml
+395 silly gunzTarPerm extractEntry util/cairo_include.sh
+396 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+397 silly gunzTarPerm extractEntry util/has_lib.sh
+398 silly gunzTarPerm extractEntry util/lib_lookup.sh
+399 silly lockFile efe279fd-hnathan-npm-colors-1-0-3-package tar:///Users/johnathan/.npm/colors/1.0.3/package
+400 silly lockFile efe279fd-hnathan-npm-colors-1-0-3-package tar:///Users/johnathan/.npm/colors/1.0.3/package
+401 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+402 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+403 verbose chmod /Users/johnathan/.npm/colors/1.0.3/package.tgz 644
+404 verbose chown /Users/johnathan/.npm/colors/1.0.3/package.tgz [ 501, 20 ]
+405 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+406 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+407 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+408 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+409 silly lockFile 9ee7deec-colors colors@*
+410 silly lockFile 9ee7deec-colors colors@*
+411 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+412 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+413 silly lockFile 0f3f8277-0744-0-32831157371401787-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz
+414 silly lockFile 0f3f8277-0744-0-32831157371401787-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/tmp.tgz
+415 verbose tar pack [ '/Users/johnathan/.npm/canvas/1.1.6/package.tgz',
+415 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package' ]
+416 verbose tarball /Users/johnathan/.npm/canvas/1.1.6/package.tgz
+417 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+418 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+419 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package /Users/johnathan/.npm/d5bb12d2-0744-0-32831157371401787-package.lock
+420 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+421 verbose lock tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz /Users/johnathan/.npm/992af920-han-npm-canvas-1-1-6-package-tgz.lock
+422 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+423 silly lockFile d5bb12d2-0744-0-32831157371401787-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326360744-0.32831157371401787/package
+424 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+425 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+426 silly lockFile 2e4dab4b-hnathan-npm-canvas-1-1-6-package /Users/johnathan/.npm/canvas/1.1.6/package
+427 verbose lock /Users/johnathan/.npm/canvas/1.1.6/package /Users/johnathan/.npm/2e4dab4b-hnathan-npm-canvas-1-1-6-package.lock
+428 silly lockFile 2e4dab4b-hnathan-npm-canvas-1-1-6-package /Users/johnathan/.npm/canvas/1.1.6/package
+429 silly lockFile 2e4dab4b-hnathan-npm-canvas-1-1-6-package /Users/johnathan/.npm/canvas/1.1.6/package
+430 verbose tar unpack /Users/johnathan/.npm/canvas/1.1.6/package.tgz
+431 silly lockFile 17923fe1-hnathan-npm-canvas-1-1-6-package tar:///Users/johnathan/.npm/canvas/1.1.6/package
+432 verbose lock tar:///Users/johnathan/.npm/canvas/1.1.6/package /Users/johnathan/.npm/17923fe1-hnathan-npm-canvas-1-1-6-package.lock
+433 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+434 verbose lock tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz /Users/johnathan/.npm/992af920-han-npm-canvas-1-1-6-package-tgz.lock
+435 silly gunzTarPerm modes [ '755', '644' ]
+436 silly gunzTarPerm extractEntry package.json
+437 silly gunzTarPerm extractEntry .npmignore
+438 silly gunzTarPerm extractEntry index.js
+439 silly gunzTarPerm extractEntry binding.gyp
+440 silly gunzTarPerm extractEntry Makefile
+441 silly gunzTarPerm extractEntry Readme.md
+442 silly gunzTarPerm extractEntry .gitmodules
+443 silly gunzTarPerm extractEntry .travis.yml
+444 silly gunzTarPerm extractEntry install
+445 silly gunzTarPerm extractEntry lib/bindings.js
+446 silly gunzTarPerm extractEntry lib/canvas.js
+447 silly gunzTarPerm extractEntry lib/context2d.js
+448 silly gunzTarPerm extractEntry lib/image.js
+449 silly gunzTarPerm extractEntry lib/jpegstream.js
+450 silly gunzTarPerm extractEntry lib/pixelarray.js
+451 silly gunzTarPerm extractEntry lib/pngstream.js
+452 silly gunzTarPerm extractEntry History.md
+453 silly gunzTarPerm extractEntry src/Image.h
+454 silly gunzTarPerm extractEntry src/Canvas.cc
+455 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+456 silly gunzTarPerm extractEntry src/CanvasGradient.h
+457 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+458 silly gunzTarPerm extractEntry src/CanvasPattern.h
+459 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+460 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+461 silly gunzTarPerm extractEntry src/FontFace.cc
+462 silly gunzTarPerm extractEntry src/FontFace.h
+463 silly gunzTarPerm extractEntry src/Image.cc
+464 silly gunzTarPerm extractEntry src/Canvas.h
+465 silly gunzTarPerm extractEntry src/ImageData.cc
+466 silly gunzTarPerm extractEntry src/ImageData.h
+467 silly gunzTarPerm extractEntry src/JPEGStream.h
+468 silly gunzTarPerm extractEntry src/PNG.h
+469 silly gunzTarPerm extractEntry src/PixelArray.cc
+470 silly gunzTarPerm extractEntry src/PixelArray.h
+471 silly gunzTarPerm extractEntry src/Point.h
+472 silly gunzTarPerm extractEntry src/closure.h
+473 silly gunzTarPerm extractEntry src/color.cc
+474 silly gunzTarPerm extractEntry src/color.h
+475 silly gunzTarPerm extractEntry src/init.cc
+476 silly gunzTarPerm extractEntry util/cairo_include.sh
+477 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+478 silly gunzTarPerm extractEntry util/has_lib.sh
+479 silly gunzTarPerm extractEntry util/lib_lookup.sh
+480 silly lockFile 17923fe1-hnathan-npm-canvas-1-1-6-package tar:///Users/johnathan/.npm/canvas/1.1.6/package
+481 silly lockFile 17923fe1-hnathan-npm-canvas-1-1-6-package tar:///Users/johnathan/.npm/canvas/1.1.6/package
+482 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+483 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+484 verbose chmod /Users/johnathan/.npm/canvas/1.1.6/package.tgz 644
+485 verbose chown /Users/johnathan/.npm/canvas/1.1.6/package.tgz [ 501, 20 ]
+486 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+487 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+488 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+489 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+490 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+491 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+492 silly resolved [ { name: 'bops',
+492 silly resolved     version: '0.0.6',
+492 silly resolved     description: 'buffer operations',
+492 silly resolved     main: 'index.js',
+492 silly resolved     scripts: { test: 'node test/index.js' },
+492 silly resolved     browser:
+492 silly resolved      { './copy.js': './typedarray/copy.js',
+492 silly resolved        './create.js': './typedarray/create.js',
+492 silly resolved        './from.js': './typedarray/from.js',
+492 silly resolved        './join.js': './typedarray/join.js',
+492 silly resolved        './mapped.js': './typedarray/mapped.js',
+492 silly resolved        './read.js': './typedarray/read.js',
+492 silly resolved        './subarray.js': './typedarray/subarray.js',
+492 silly resolved        './to.js': './typedarray/to.js',
+492 silly resolved        './is.js': './typedarray/is.js',
+492 silly resolved        './write.js': './typedarray/write.js' },
+492 silly resolved     repository: { type: 'git', url: 'git://github.com/chrisdickinson/bops.git' },
+492 silly resolved     keywords: [ 'buffer', 'operations', 'binary' ],
+492 silly resolved     author: { name: 'Chris Dickinson', email: 'chris@neversaw.us' },
+492 silly resolved     license: 'MIT',
+492 silly resolved     gitHead: '11f41e69b1ab4507027ac162981913b268445b4a',
+492 silly resolved     devDependencies: { tape: '~1.0.1' },
+492 silly resolved     dependencies: { 'base64-js': '0.0.2', 'to-utf8': '0.0.1' },
+492 silly resolved     testling: { files: 'test/index.js', browsers: [Object] },
+492 silly resolved     readme: '# bops\n\nbuffer/typed array agnostic buffer operations.\n\n```javascript\nvar binary = require(\'bops\')\n\nbinary.readUInt8(new Buffer(10), 0) // === 10\n\n```\n\nin browser, will default to using `Uint8Array` instances.\nin node, will default to using `Buffer` instances.\n\n## API\n\n> ## supported encodings\n> * utf8\n> * hex\n> * base64\n\n#### bops.from(str, encoding="utf8") -> buf\n\ngiven a string (and optional encoding) return a native buffer instance.\nalso accepts arrays.\n\n#### bops.to(buf, encoding="utf8") -> str\n\ngiven a native buffer (and optional encoding) return a string.\n\n#### bops.is(buf) -> bool\n\ngiven a native buffer returns true.  Returns false for other values.\n\n#### bops.subarray(buf, start[, end]) -> buf\n\nreturn a view onto the original buffer.\n\n#### bops.join([buf, buf, buf]) -> buf\n\ncompile several buffers into a single buffer.\n\n#### bops.create(size) -> buf\n\ncreate a native buffer instance of `size`.\n\n#### bops.copy(source, target, target_start, source_start, source_end)\n\nperform a fast copy from one native buffer to another.\n\n#### readUInt8(buf, at)\n#### readInt8(buf, at)\n#### readUInt16LE(buf, at)\n#### readUInt32LE(buf, at)\n#### readInt8(buf, at)\n#### readInt16LE(buf, at)\n#### readInt32LE(buf, at)\n#### readFloatLE(buf, at)\n#### readDoubleLE(buf, at)\n#### readUInt16BE(buf, at)\n#### readUInt32BE(buf, at)\n#### readInt16BE(buf, at)\n#### readInt32BE(buf, at)\n#### readFloatBE(buf, at)\n#### readDoubleBE(buf, at)\n\nread a value from a buffer at a given byte offset.\n\n#### writeUInt8(buf, value, at)\n#### writeInt8(buf, value, at)\n#### writeUInt16LE(buf, value, at)\n#### writeUInt32LE(buf, value, at)\n#### writeInt8(buf, value, at)\n#### writeInt16LE(buf, value, at)\n#### writeInt32LE(buf, value, at)\n#### writeFloatLE(buf, value, at)\n#### writeDoubleLE(buf, value, at)\n#### writeUInt16BE(buf, value, at)\n#### writeUInt32BE(buf, value, at)\n#### writeInt16BE(buf, value, at)\n#### writeInt32BE(buf, value, at)\n#### writeFloatBE(buf, value, at)\n#### writeDoubleBE(buf, value, at)\n\nwrite a value to a buffer at a given byte offset.\n\n# License\n\nMIT\n',
+492 silly resolved     readmeFilename: 'README.md',
+492 silly resolved     bugs: { url: 'https://github.com/chrisdickinson/bops/issues' },
+492 silly resolved     homepage: 'https://github.com/chrisdickinson/bops',
+492 silly resolved     _id: 'bops@0.0.6',
+492 silly resolved     dist: { shasum: 'e63a2cd5b3b4be2fad0fb9854402fdf01b39be02' },
+492 silly resolved     _from: 'bops@0.0.6',
+492 silly resolved     _resolved: 'https://registry.npmjs.org/bops/-/bops-0.0.6.tgz' },
+492 silly resolved   { name: 'colors',
+492 silly resolved     description: 'get colors in your node.js console',
+492 silly resolved     version: '1.0.3',
+492 silly resolved     author: { name: 'Marak Squires' },
+492 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+492 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+492 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+492 silly resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+492 silly resolved     license: 'MIT',
+492 silly resolved     scripts: { test: 'node tests/basic-test.js && node tests/safe-test.js' },
+492 silly resolved     engines: { node: '>=0.1.90' },
+492 silly resolved     main: './lib/index',
+492 silly resolved     readme: '# colors.js\n\n## get color and style in your node.js console\n\n<img src="https://github.com/Marak/colors.js/raw/master/screenshots/colors.png"/>\n\n## Installation\n\n    npm install colors\n\n## colors and styles!\n\n### text colors\n\n  - black\n  - red\n  - green\n  - yellow\n  - blue\n  - magenta\n  - cyan\n  - white\n  - gray\n  - grey\n\n### background colors\n\n\n\n  - bgBlack\n  - bgRed\n  - bgGreen\n  - bgYellow\n  - bgBlue\n  - bgMagenta\n  - bgCyan\n  - bgWhite\n\n### styles\n\n  - reset\n  - bold\n  - dim\n  - italic\n  - underline\n  - inverse\n  - hidden\n  - strikethrough\n\n### extras\n\n  - rainbow\n  - zebra\n  - america\n  - trap\n  - random\n\n\n## Usage\n\nBy popular demand, `colors` now ships with two types of usages!\n\nThe super nifty way\n\n```js\nvar colors = require(\'colors\');\n\nconsole.log(\'hello\'.green); // outputs green text\nconsole.log(\'i like cake and pies\'.underline.red) // outputs red underlined text\nconsole.log(\'inverse the color\'.inverse); // inverses the color\nconsole.log(\'OMG Rainbows!\'.rainbow); // rainbow\nconsole.log(\'Run the trap\'.trap); // Drops the bass\n\n```\n\nor a slightly less nifty way which doesn\'t extend `String.prototype`\n\n```js\nvar colors = require(\'colors/safe\');\n\nconsole.log(colors.green(\'hello\')); // outputs green text\nconsole.log(colors.red.underline(\'i like cake and pies\')) // outputs red underlined text\nconsole.log(colors.inverse(\'inverse the color\')); // inverses the color\nconsole.log(colors.rainbow(\'OMG Rainbows!\')); // rainbow\nconsole.log(colors.trap(\'Run the trap\')); // Drops the bass\n\n```\n\nI prefer the first way. Some people seem to be afraid of extending `String.prototype` and prefer the second way. \n\nIf you are writing good code you will never have an issue with the first approach. If you really don\'t want to touch `String.prototype`, the second usage will not touch `String` native object.\n\n## Disabling Colors\n\nTo disable colors you can pass the following arguments in the command line to your application:\n\n```bash\nnode myapp.js --no-color\n```\n\n## Console.log [string substitution](http://nodejs.org/docs/latest/api/console.html#console_console_log_data)\n\n```js\nvar name = \'Marak\';\nconsole.log(colors.green(\'Hello %s\'), name);\n// outputs -> \'Hello Marak\'\n```\n\n## Custom themes\n\n### Using standard API\n\n```js\n\nvar colors = require(\'colors\');\n\ncolors.setTheme({\n  silly: \'rainbow\',\n  input: \'grey\',\n  verbose: \'cyan\',\n  prompt: \'grey\',\n  info: \'green\',\n  data: \'grey\',\n  help: \'cyan\',\n  warn: \'yellow\',\n  debug: \'blue\',\n  error: \'red\'\n});\n\n// outputs red text\nconsole.log("this is an error".error);\n\n// outputs yellow text\nconsole.log("this is a warning".warn);\n```\n\n### Using string safe API\n\n```js\nvar colors = require(\'colors/safe\');\n\n// set single property\nvar error = colors.red;\nerror(\'this is red\');\n\n// set theme\ncolors.setTheme({\n  silly: \'rainbow\',\n  input: \'grey\',\n  verbose: \'cyan\',\n  prompt: \'grey\',\n  info: \'green\',\n  data: \'grey\',\n  help: \'cyan\',\n  warn: \'yellow\',\n  debug: \'blue\',\n  error: \'red\'\n});\n\n// outputs red text\nconsole.log(colors.error("this is an error"));\n\n// outputs yellow text\nconsole.log(colors.warn("this is a warning"));\n```\n\n*Protip: There is a secret undocumented style in `colors`. If you find the style you can summon him.*',
+492 silly resolved     readmeFilename: 'ReadMe.md',
+492 silly resolved     _id: 'colors@1.0.3',
+492 silly resolved     dist: { shasum: '0433f44d809680fdeb60ed260f1b0c262e82a40b' },
+492 silly resolved     _from: 'colors@*',
+492 silly resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-1.0.3.tgz' },
+492 silly resolved   { name: 'canvas',
+492 silly resolved     description: 'Canvas graphics API backed by Cairo',
+492 silly resolved     version: '1.1.6',
+492 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+492 silly resolved     contributors: [ [Object], [Object], [Object] ],
+492 silly resolved     keywords:
+492 silly resolved      [ 'canvas',
+492 silly resolved        'graphic',
+492 silly resolved        'graphics',
+492 silly resolved        'pixman',
+492 silly resolved        'cairo',
+492 silly resolved        'image',
+492 silly resolved        'images',
+492 silly resolved        'pdf' ],
+492 silly resolved     homepage: 'https://github.com/learnboost/node-canvas',
+492 silly resolved     repository: { type: 'git', url: 'git://github.com/learnboost/node-canvas' },
+492 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+492 silly resolved     dependencies: { nan: '~1.2.0' },
+492 silly resolved     devDependencies: { express: '3.0', jade: '0.28.1', mocha: '*', should: '*' },
+492 silly resolved     engines: { node: '>= 0.6.0' },
+492 silly resolved     main: './lib/canvas.js',
+492 silly resolved     gypfile: true,
+492 silly resolved     readme: '[![NPM version](https://badge.fury.io/js/canvas.png)](http://badge.fury.io/js/canvas)\n[![Dependency Status](https://gemnasium.com/LearnBoost/node-canvas.png)](https://gemnasium.com/LearnBoost/node-canvas)\n\n# node-canvas\n\n Node canvas is a [Cairo](http://cairographics.org/) backed Canvas implementation for [NodeJS](http://nodejs.org).\n\n## Authors\n\n  - TJ Holowaychuk ([visionmedia](http://github.com/visionmedia))\n  - Nathan Rajlich ([TooTallNate](http://github.com/TooTallNate))\n  - Rod Vagg ([rvagg](http://github.com/rvagg))\n  - Juriy Zaytsev ([kangax](http://github.com/kangax))\n\n## Installation\n\n```bash\n$ npm install canvas\n```\n\nUnless previously installed you\'ll _need_ __Cairo__. For system-specific installation view the [Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).\n\nYou can quickly install Cairo and its dependencies for OS X using the one liner below:\n\n```bash\n$ wget https://raw.githubusercontent.com/LearnBoost/node-canvas/master/install -O - | sh\n```\n\n## Screencasts\n\n  - [Introduction](http://screenr.com/CTk)\n\n## Example\n\n```javascript\nvar Canvas = require(\'canvas\')\n  , Image = Canvas.Image\n  , canvas = new Canvas(200,200)\n  , ctx = canvas.getContext(\'2d\');\n\nctx.font = \'30px Impact\';\nctx.rotate(.1);\nctx.fillText("Awesome!", 50, 100);\n\nvar te = ctx.measureText(\'Awesome!\');\nctx.strokeStyle = \'rgba(0,0,0,0.5)\';\nctx.beginPath();\nctx.lineTo(50, 102);\nctx.lineTo(50 + te.width, 102);\nctx.stroke();\n\nconsole.log(\'<img src="\' + canvas.toDataURL() + \'" />\');\n```\n\n## Non-Standard API\n\n node-canvas extends the canvas API to provide interfacing with node, for example streaming PNG data, converting to a `Buffer` instance, etc. Among the interfacing API, in some cases the drawing API has been extended for SSJS image manipulation / creation usage, however keep in mind these additions may fail to render properly within browsers.\n\n### Image#src=Buffer\n\n node-canvas adds `Image#src=Buffer` support, allowing you to read images from disc, redis, etc and apply them via `ctx.drawImage()`. Below we draw scaled down squid png by reading it from the disk with node\'s I/O.\n\n```javascript\nfs.readFile(__dirname + \'/images/squid.png\', function(err, squid){\n  if (err) throw err;\n  img = new Image;\n  img.src = squid;\n  ctx.drawImage(img, 0, 0, img.width / 4, img.height / 4);\n});\n```\n\n Below is an example of a canvas drawing it-self as the source several time:\n\n```javascript\nvar img = new Image;\nimg.src = canvas.toBuffer();\nctx.drawImage(img, 0, 0, 50, 50);\nctx.drawImage(img, 50, 0, 50, 50);\nctx.drawImage(img, 100, 0, 50, 50);\n```\n\n### Image#dataMode\n\nnode-canvas adds `Image#dataMode` support, which can be used to opt-in to mime data tracking of images (currently only JPEGs).\n\nWhen mime data is tracked, in PDF mode JPEGs can be embedded directly into the output, rather than being re-encoded into PNG. This can drastically reduce filesize, and speed up rendering.\n\n```javascript\nvar img = new Image;\nimg.dataMode = Image.MODE_IMAGE; // Only image data tracked\nimg.dataMode = Image.MODE_MIME; // Only mime data tracked\nimg.dataMode = Image.MODE_MIME | Image.MODE_IMAGE; // Both are tracked\n```\n\nIf image data is not tracked, and the Image is drawn to an image rather than a PDF canvas, the output will be junk. Enabling mime data tracking has no benefits (only a slow down) unless you are generating a PDF.\n\n### Canvas#pngStream()\n\n  To create a `PNGStream` simply call `canvas.pngStream()`, and the stream will start to emit _data_ events, finally emitting _end_ when finished. If an exception occurs the _error_ event is emitted.\n\n```javascript\nvar fs = require(\'fs\')\n  , out = fs.createWriteStream(__dirname + \'/text.png\')\n  , stream = canvas.pngStream();\n\nstream.on(\'data\', function(chunk){\n  out.write(chunk);\n});\n\nstream.on(\'end\', function(){\n  console.log(\'saved png\');\n});\n```\n\nCurrently _only_ sync streaming is supported, however we plan on supporting async streaming as well (of course :) ). Until then the `Canvas#toBuffer(callback)` alternative is async utilizing `eio_custom()`.\n\n### Canvas#jpegStream() and Canvas#syncJPEGStream()\n\nYou can likewise create a `JPEGStream` by calling `canvas.jpegStream()` with\nsome optional parameters; functionality is otherwise identical to\n`pngStream()`. See `examples/crop.js` for an example.\n\n_Note: At the moment, `jpegStream()` is the same as `syncJPEGStream()`, both\nare synchronous_\n\n```javascript\nvar stream = canvas.jpegStream({\n    bufsize: 4096 // output buffer size in bytes, default: 4096\n  , quality: 75 // JPEG quality (0-100) default: 75\n  , progressive: false // true for progressive compression, default: false\n});\n```\n\n### Canvas#toBuffer()\n\nA call to `Canvas#toBuffer()` will return a node `Buffer` instance containing all of the PNG data.\n\n```javascript\ncanvas.toBuffer();\n```\n\n### Canvas#toBuffer() async\n\nOptionally we may pass a callback function to `Canvas#toBuffer()`, and this process will be performed asynchronously, and will `callback(err, buf)`.\n\n```javascript\ncanvas.toBuffer(function(err, buf){\n\n});\n```\n\n### Canvas#toDataURL() async\n\nOptionally we may pass a callback function to `Canvas#toDataURL()`, and this process will be performed asynchronously, and will `callback(err, str)`.\n\n```javascript\ncanvas.toDataURL(function(err, str){\n\n});\n```\n\nor specify the mime type:\n\n```javascript\ncanvas.toDataURL(\'image/png\', function(err, str){\n\n});\n```\n\n### CanvasRenderingContext2d#patternQuality\n\nGiven one of the values below will alter pattern (gradients, images, etc) render quality, defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### CanvasRenderingContext2d#textDrawingMode\n\nCan be either `path` or `glyph`. Using `glyph` is much faster than `path` for drawing, and when using a PDF context will embed the text natively, so will be selectable and lower filesize. The downside is that cairo does not have any subpixel precision for `glyph`, so this will be noticeably lower quality for text positioning in cases such as rotated text. Also, strokeText in `glyph` will act the same as fillText, except using the stroke style for the fill.\n\nDefaults to _path_.\n\nThis property is tracked as part of the canvas state in save/restore.\n\n### CanvasRenderingContext2d#filter\n\nLike `patternQuality`, but applies to transformations effecting more than just patterns. Defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### Global Composite Operations\n\nIn addition to those specified and commonly implemented by browsers, the following have been added:\n\n  - multiply\n  - screen\n  - overlay\n  - hard-light\n  - soft-light\n  - hsl-hue\n  - hsl-saturation\n  - hsl-color\n  - hsl-luminosity\n\n## Anti-Aliasing\n\n Set anti-aliasing mode\n\n - default\n - none\n - gray\n - subpixel\n\n For example:\n\n```javascript\nctx.antialias = \'none\';\n```\n\n## PDF Support\n\n  Basic PDF support was added in 0.11.0. Make sure to install cairo with `--enable-pdf=yes` for the PDF backend. node-canvas must know that it is creating\n  a PDF on initialization, using the "pdf" string:\n\n```js\nvar canvas = new Canvas(200, 500, \'pdf\');\n```\n\n An additional method `.addPage()` is then available to create\n multiple page PDFs:\n\n```js\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 2\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 3\', 50, 80);\nctx.addPage();\n```\n\n## Benchmarks\n\n Although node-canvas is extremely new, and we have not even begun optimization yet it is already quite fast. For benchmarks vs other node canvas implementations view this [gist](https://gist.github.com/664922), or update the submodules and run `$ make benchmark` yourself.\n\n## Contribute\n\n Want to contribute to node-canvas? patches for features, bug fixes, documentation, examples and others are certainly welcome. Take a look at the [issue queue](https://github.com/LearnBoost/node-canvas/issues) for existing issues.\n\n## Examples\n\n Examples are placed in _./examples_, be sure to check them out! most produce a png image of the same name, and others such as _live-clock.js_ launch an http server to be viewed in the browser.\n\n## Testing\n\nIf you have not previously, init git submodules:\n\n    $ git submodule update --init\n\nBuild node-canvas:\n\n    $ node-waf configure build\n\nUnit tests:\n\n    $ make test\n\nVisual tests:\n\n    $ make test-server\n\n## Versions\n\nTested with and designed for:\n\n  - node 0.4.2\n  - cairo 1.8.6\n\nFor node 0.2.x `node-canvas` <= 0.4.3 may be used,\n0.5.0 and above are designed for node 0.4.x only.\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2010 LearnBoost, and contributors &lt;dev@learnboost.com&gt;\n\nCopyright (c) 2014 Automattic, Inc and contributors &lt;dev@automattic.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+492 silly resolved     readmeFilename: 'Readme.md',
+492 silly resolved     bugs: { url: 'https://github.com/learnboost/node-canvas/issues' },
+492 silly resolved     _id: 'canvas@1.1.6',
+492 silly resolved     dist: { shasum: 'ef7b4b7a8a7014d235bbce43dc54e8e534d989c5' },
+492 silly resolved     _from: 'canvas@~1.1.6',
+492 silly resolved     _resolved: 'https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz' } ]
+493 info install bops@0.0.6 into /usr/local/lib/node_modules/qrcode
+494 info install colors@1.0.3 into /usr/local/lib/node_modules/qrcode
+495 info install canvas@1.1.6 into /usr/local/lib/node_modules/qrcode
+496 info installOne bops@0.0.6
+497 info installOne colors@1.0.3
+498 info installOne canvas@1.1.6
+499 info /usr/local/lib/node_modules/qrcode/node_modules/bops unbuild
+500 info /usr/local/lib/node_modules/qrcode/node_modules/colors unbuild
+501 info /usr/local/lib/node_modules/qrcode/node_modules/canvas unbuild
+502 verbose tar unpack /Users/johnathan/.npm/bops/0.0.6/package.tgz
+503 silly lockFile 179a3a0e-modules-qrcode-node-modules-bops tar:///usr/local/lib/node_modules/qrcode/node_modules/bops
+504 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/bops /Users/johnathan/.npm/179a3a0e-modules-qrcode-node-modules-bops.lock
+505 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+506 verbose lock tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz /Users/johnathan/.npm/7cbd3722-athan-npm-bops-0-0-6-package-tgz.lock
+507 verbose tar unpack /Users/johnathan/.npm/colors/1.0.3/package.tgz
+508 silly lockFile 7ed6d5cd-dules-qrcode-node-modules-colors tar:///usr/local/lib/node_modules/qrcode/node_modules/colors
+509 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/colors /Users/johnathan/.npm/7ed6d5cd-dules-qrcode-node-modules-colors.lock
+510 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+511 verbose lock tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz /Users/johnathan/.npm/75b160c9-han-npm-colors-1-0-3-package-tgz.lock
+512 verbose tar unpack /Users/johnathan/.npm/canvas/1.1.6/package.tgz
+513 silly lockFile 3d2dd816-dules-qrcode-node-modules-canvas tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas
+514 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas /Users/johnathan/.npm/3d2dd816-dules-qrcode-node-modules-canvas.lock
+515 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+516 verbose lock tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz /Users/johnathan/.npm/992af920-han-npm-canvas-1-1-6-package-tgz.lock
+517 silly gunzTarPerm modes [ '755', '644' ]
+518 silly gunzTarPerm modes [ '755', '644' ]
+519 silly gunzTarPerm modes [ '755', '644' ]
+520 silly gunzTarPerm extractEntry package.json
+521 silly gunzTarPerm extractEntry package.json
+522 silly gunzTarPerm extractEntry package.json
+523 silly gunzTarPerm extractEntry README.md
+524 silly gunzTarPerm extractEntry create.js
+525 silly gunzTarPerm extractEntry safe.js
+526 silly gunzTarPerm extractEntry .travis.yml
+527 silly gunzTarPerm extractEntry .npmignore
+528 silly gunzTarPerm extractEntry index.js
+529 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+530 silly gunzTarPerm extractEntry ReadMe.md
+531 silly gunzTarPerm extractEntry index.js
+532 silly gunzTarPerm extractEntry is.js
+533 silly gunzTarPerm extractEntry binding.gyp
+534 silly gunzTarPerm extractEntry Makefile
+535 silly gunzTarPerm extractEntry examples/normal-usage.js
+536 silly gunzTarPerm extractEntry examples/safe-string.js
+537 silly gunzTarPerm extractEntry Readme.md
+538 silly gunzTarPerm extractEntry .gitmodules
+539 silly gunzTarPerm extractEntry .travis.yml
+540 silly gunzTarPerm extractEntry install
+541 silly gunzTarPerm extractEntry lib/bindings.js
+542 silly gunzTarPerm extractEntry lib/canvas.js
+543 silly gunzTarPerm extractEntry lib/context2d.js
+544 silly gunzTarPerm extractEntry lib/image.js
+545 silly gunzTarPerm extractEntry lib/jpegstream.js
+546 silly gunzTarPerm extractEntry lib/pixelarray.js
+547 silly gunzTarPerm extractEntry lib/pngstream.js
+548 silly gunzTarPerm extractEntry History.md
+549 silly gunzTarPerm extractEntry src/Image.h
+550 silly gunzTarPerm extractEntry src/Canvas.cc
+551 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+552 silly gunzTarPerm extractEntry src/CanvasGradient.h
+553 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+554 silly gunzTarPerm extractEntry src/CanvasPattern.h
+555 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+556 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+557 silly gunzTarPerm extractEntry src/FontFace.cc
+558 silly gunzTarPerm extractEntry src/FontFace.h
+559 silly gunzTarPerm extractEntry src/Image.cc
+560 silly gunzTarPerm extractEntry src/Canvas.h
+561 silly gunzTarPerm extractEntry src/ImageData.cc
+562 silly gunzTarPerm extractEntry src/ImageData.h
+563 silly gunzTarPerm extractEntry src/JPEGStream.h
+564 silly gunzTarPerm extractEntry src/PNG.h
+565 silly gunzTarPerm extractEntry src/PixelArray.cc
+566 silly gunzTarPerm extractEntry src/PixelArray.h
+567 silly gunzTarPerm extractEntry src/Point.h
+568 silly gunzTarPerm extractEntry src/closure.h
+569 silly gunzTarPerm extractEntry src/color.cc
+570 silly gunzTarPerm extractEntry src/color.h
+571 silly gunzTarPerm extractEntry src/init.cc
+572 silly gunzTarPerm extractEntry util/cairo_include.sh
+573 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+574 silly gunzTarPerm extractEntry util/has_lib.sh
+575 silly gunzTarPerm extractEntry util/lib_lookup.sh
+576 silly gunzTarPerm extractEntry join.js
+577 silly gunzTarPerm extractEntry copy.js
+578 silly gunzTarPerm extractEntry lib/colors.js
+579 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+580 silly gunzTarPerm extractEntry from.js
+581 silly gunzTarPerm extractEntry subarray.js
+582 silly gunzTarPerm extractEntry lib/index.js
+583 silly gunzTarPerm extractEntry lib/styles.js
+584 silly gunzTarPerm extractEntry to.js
+585 silly gunzTarPerm extractEntry write.js
+586 silly gunzTarPerm extractEntry read.js
+587 silly gunzTarPerm extractEntry test/copy.js
+588 silly gunzTarPerm extractEntry lib/custom/trap.js
+589 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+590 silly gunzTarPerm extractEntry test/create.js
+591 silly gunzTarPerm extractEntry lib/maps/america.js
+592 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+593 silly gunzTarPerm extractEntry test/from.js
+594 silly gunzTarPerm extractEntry test/index.js
+595 silly gunzTarPerm extractEntry test/is.js
+596 silly gunzTarPerm extractEntry test/join.js
+597 silly gunzTarPerm extractEntry lib/maps/random.js
+598 silly gunzTarPerm extractEntry lib/maps/zebra.js
+599 silly gunzTarPerm extractEntry test/read.js
+600 silly gunzTarPerm extractEntry test/subarray.js
+601 silly gunzTarPerm extractEntry test/to.js
+602 silly gunzTarPerm extractEntry test/write.js
+603 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+604 silly gunzTarPerm extractEntry screenshots/colors.png
+605 silly gunzTarPerm extractEntry typedarray/copy.js
+606 silly gunzTarPerm extractEntry typedarray/create.js
+607 silly gunzTarPerm extractEntry tests/basic-test.js
+608 silly gunzTarPerm extractEntry tests/safe-test.js
+609 silly gunzTarPerm extractEntry typedarray/from.js
+610 silly gunzTarPerm extractEntry typedarray/is.js
+611 silly gunzTarPerm extractEntry themes/generic-logging.js
+612 silly gunzTarPerm extractEntry typedarray/join.js
+613 silly gunzTarPerm extractEntry typedarray/mapped.js
+614 silly gunzTarPerm extractEntry typedarray/read.js
+615 silly gunzTarPerm extractEntry typedarray/subarray.js
+616 silly gunzTarPerm extractEntry typedarray/to.js
+617 silly gunzTarPerm extractEntry typedarray/write.js
+618 silly lockFile 179a3a0e-modules-qrcode-node-modules-bops tar:///usr/local/lib/node_modules/qrcode/node_modules/bops
+619 silly lockFile 179a3a0e-modules-qrcode-node-modules-bops tar:///usr/local/lib/node_modules/qrcode/node_modules/bops
+620 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+621 silly lockFile 7cbd3722-athan-npm-bops-0-0-6-package-tgz tar:///Users/johnathan/.npm/bops/0.0.6/package.tgz
+622 info preinstall bops@0.0.6
+623 verbose readDependencies using package.json deps
+624 verbose readDependencies using package.json deps
+625 verbose cache add [ 'base64-js@0.0.2', null ]
+626 verbose cache add name=undefined spec="base64-js@0.0.2" args=["base64-js@0.0.2",null]
+627 verbose parsed url { protocol: null,
+627 verbose parsed url   slashes: null,
+627 verbose parsed url   auth: null,
+627 verbose parsed url   host: null,
+627 verbose parsed url   port: null,
+627 verbose parsed url   hostname: null,
+627 verbose parsed url   hash: null,
+627 verbose parsed url   search: null,
+627 verbose parsed url   query: null,
+627 verbose parsed url   pathname: 'base64-js@0.0.2',
+627 verbose parsed url   path: 'base64-js@0.0.2',
+627 verbose parsed url   href: 'base64-js@0.0.2' }
+628 verbose cache add name="base64-js" spec="0.0.2" args=["base64-js","0.0.2"]
+629 verbose parsed url { protocol: null,
+629 verbose parsed url   slashes: null,
+629 verbose parsed url   auth: null,
+629 verbose parsed url   host: null,
+629 verbose parsed url   port: null,
+629 verbose parsed url   hostname: null,
+629 verbose parsed url   hash: null,
+629 verbose parsed url   search: null,
+629 verbose parsed url   query: null,
+629 verbose parsed url   pathname: '0.0.2',
+629 verbose parsed url   path: '0.0.2',
+629 verbose parsed url   href: '0.0.2' }
+630 verbose addNamed [ 'base64-js', '0.0.2' ]
+631 verbose addNamed [ '0.0.2', '0.0.2' ]
+632 silly lockFile 2f74027a-base64-js-0-0-2 base64-js@0.0.2
+633 verbose lock base64-js@0.0.2 /Users/johnathan/.npm/2f74027a-base64-js-0-0-2.lock
+634 verbose cache add [ 'to-utf8@0.0.1', null ]
+635 verbose cache add name=undefined spec="to-utf8@0.0.1" args=["to-utf8@0.0.1",null]
+636 verbose parsed url { protocol: null,
+636 verbose parsed url   slashes: null,
+636 verbose parsed url   auth: null,
+636 verbose parsed url   host: null,
+636 verbose parsed url   port: null,
+636 verbose parsed url   hostname: null,
+636 verbose parsed url   hash: null,
+636 verbose parsed url   search: null,
+636 verbose parsed url   query: null,
+636 verbose parsed url   pathname: 'to-utf8@0.0.1',
+636 verbose parsed url   path: 'to-utf8@0.0.1',
+636 verbose parsed url   href: 'to-utf8@0.0.1' }
+637 verbose cache add name="to-utf8" spec="0.0.1" args=["to-utf8","0.0.1"]
+638 verbose parsed url { protocol: null,
+638 verbose parsed url   slashes: null,
+638 verbose parsed url   auth: null,
+638 verbose parsed url   host: null,
+638 verbose parsed url   port: null,
+638 verbose parsed url   hostname: null,
+638 verbose parsed url   hash: null,
+638 verbose parsed url   search: null,
+638 verbose parsed url   query: null,
+638 verbose parsed url   pathname: '0.0.1',
+638 verbose parsed url   path: '0.0.1',
+638 verbose parsed url   href: '0.0.1' }
+639 verbose addNamed [ 'to-utf8', '0.0.1' ]
+640 verbose addNamed [ '0.0.1', '0.0.1' ]
+641 silly lockFile dee282ea-to-utf8-0-0-1 to-utf8@0.0.1
+642 verbose lock to-utf8@0.0.1 /Users/johnathan/.npm/dee282ea-to-utf8-0-0-1.lock
+643 verbose url raw base64-js/0.0.2
+644 verbose url resolving [ 'https://registry.npmjs.org/', './base64-js/0.0.2' ]
+645 verbose url resolved https://registry.npmjs.org/base64-js/0.0.2
+646 info trying registry request attempt 1 at 10:46:01
+647 http GET https://registry.npmjs.org/base64-js/0.0.2
+648 verbose url raw to-utf8/0.0.1
+649 verbose url resolving [ 'https://registry.npmjs.org/', './to-utf8/0.0.1' ]
+650 verbose url resolved https://registry.npmjs.org/to-utf8/0.0.1
+651 info trying registry request attempt 1 at 10:46:01
+652 http GET https://registry.npmjs.org/to-utf8/0.0.1
+653 silly lockFile 7ed6d5cd-dules-qrcode-node-modules-colors tar:///usr/local/lib/node_modules/qrcode/node_modules/colors
+654 silly lockFile 7ed6d5cd-dules-qrcode-node-modules-colors tar:///usr/local/lib/node_modules/qrcode/node_modules/colors
+655 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+656 silly lockFile 75b160c9-han-npm-colors-1-0-3-package-tgz tar:///Users/johnathan/.npm/colors/1.0.3/package.tgz
+657 info preinstall colors@1.0.3
+658 verbose readDependencies using package.json deps
+659 verbose readDependencies using package.json deps
+660 silly resolved []
+661 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/colors
+662 info build /usr/local/lib/node_modules/qrcode/node_modules/colors
+663 verbose linkStuff [ true,
+663 verbose linkStuff   '/usr/local/lib/node_modules',
+663 verbose linkStuff   false,
+663 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules' ]
+664 info linkStuff colors@1.0.3
+665 verbose linkBins colors@1.0.3
+666 verbose linkMans colors@1.0.3
+667 verbose rebuildBundles colors@1.0.3
+668 info install colors@1.0.3
+669 info postinstall colors@1.0.3
+670 silly lockFile 3d2dd816-dules-qrcode-node-modules-canvas tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas
+671 silly lockFile 3d2dd816-dules-qrcode-node-modules-canvas tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas
+672 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+673 silly lockFile 992af920-han-npm-canvas-1-1-6-package-tgz tar:///Users/johnathan/.npm/canvas/1.1.6/package.tgz
+674 info preinstall canvas@1.1.6
+675 verbose readDependencies using package.json deps
+676 verbose readDependencies using package.json deps
+677 verbose cache add [ 'nan@~1.2.0', null ]
+678 verbose cache add name=undefined spec="nan@~1.2.0" args=["nan@~1.2.0",null]
+679 verbose parsed url { protocol: null,
+679 verbose parsed url   slashes: null,
+679 verbose parsed url   auth: null,
+679 verbose parsed url   host: null,
+679 verbose parsed url   port: null,
+679 verbose parsed url   hostname: null,
+679 verbose parsed url   hash: null,
+679 verbose parsed url   search: null,
+679 verbose parsed url   query: null,
+679 verbose parsed url   pathname: 'nan@~1.2.0',
+679 verbose parsed url   path: 'nan@~1.2.0',
+679 verbose parsed url   href: 'nan@~1.2.0' }
+680 verbose cache add name="nan" spec="~1.2.0" args=["nan","~1.2.0"]
+681 verbose parsed url { protocol: null,
+681 verbose parsed url   slashes: null,
+681 verbose parsed url   auth: null,
+681 verbose parsed url   host: null,
+681 verbose parsed url   port: null,
+681 verbose parsed url   hostname: null,
+681 verbose parsed url   hash: null,
+681 verbose parsed url   search: null,
+681 verbose parsed url   query: null,
+681 verbose parsed url   pathname: '~1.2.0',
+681 verbose parsed url   path: '~1.2.0',
+681 verbose parsed url   href: '~1.2.0' }
+682 verbose addNamed [ 'nan', '~1.2.0' ]
+683 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+684 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+685 verbose lock nan@~1.2.0 /Users/johnathan/.npm/6bb36ab7-nan-1-2-0.lock
+686 silly addNameRange { name: 'nan', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+687 verbose url raw nan
+688 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+689 verbose url resolved https://registry.npmjs.org/nan
+690 info trying registry request attempt 1 at 10:46:01
+691 verbose etag "CEMZ6OEW2VZUAG4UWGWLIIR3C"
+692 http GET https://registry.npmjs.org/nan
+693 http 200 https://registry.npmjs.org/nan
+694 silly registry.get cb [ 200,
+694 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:01 GMT',
+694 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+694 silly registry.get     etag: '"12EHA1PNRCCAOAQY0AIBQ9ET9"',
+694 silly registry.get     'content-type': 'application/json',
+694 silly registry.get     'cache-control': 'max-age=60',
+694 silly registry.get     'content-length': '101336',
+694 silly registry.get     'accept-ranges': 'bytes',
+694 silly registry.get     via: '1.1 varnish',
+694 silly registry.get     age: '46',
+694 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+694 silly registry.get     'x-cache': 'HIT',
+694 silly registry.get     'x-cache-hits': '1',
+694 silly registry.get     'x-timer': 'S1426326361.464695,VS0,VE0',
+694 silly registry.get     vary: 'Accept',
+694 silly registry.get     'keep-alive': 'timeout=10, max=50',
+694 silly registry.get     connection: 'Keep-Alive' } ]
+695 silly addNameRange number 2 { name: 'nan', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+696 silly addNameRange versions [ 'nan',
+696 silly addNameRange   [ '0.3.0-wip',
+696 silly addNameRange     '0.3.0-wip2',
+696 silly addNameRange     '0.3.0',
+696 silly addNameRange     '0.3.1',
+696 silly addNameRange     '0.3.2',
+696 silly addNameRange     '0.4.0',
+696 silly addNameRange     '0.4.1',
+696 silly addNameRange     '0.4.2',
+696 silly addNameRange     '0.4.3',
+696 silly addNameRange     '0.4.4',
+696 silly addNameRange     '0.5.0',
+696 silly addNameRange     '0.5.1',
+696 silly addNameRange     '0.5.2',
+696 silly addNameRange     '0.6.0',
+696 silly addNameRange     '0.7.0',
+696 silly addNameRange     '0.7.1',
+696 silly addNameRange     '0.8.0',
+696 silly addNameRange     '1.0.0',
+696 silly addNameRange     '1.1.0',
+696 silly addNameRange     '1.1.1',
+696 silly addNameRange     '1.1.2',
+696 silly addNameRange     '1.2.0',
+696 silly addNameRange     '1.3.0',
+696 silly addNameRange     '1.4.0',
+696 silly addNameRange     '1.4.1',
+696 silly addNameRange     '1.5.0',
+696 silly addNameRange     '1.4.2',
+696 silly addNameRange     '1.4.3',
+696 silly addNameRange     '1.5.1',
+696 silly addNameRange     '1.5.2',
+696 silly addNameRange     '1.6.0',
+696 silly addNameRange     '1.5.3',
+696 silly addNameRange     '1.6.1',
+696 silly addNameRange     '1.6.2',
+696 silly addNameRange     '1.7.0' ] ]
+697 verbose addNamed [ 'nan', '1.2.0' ]
+698 verbose addNamed [ '1.2.0', '1.2.0' ]
+699 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+700 verbose lock nan@1.2.0 /Users/johnathan/.npm/859d0f28-nan-1-2-0.lock
+701 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+702 verbose lock https://registry.npmjs.org/nan/-/nan-1.2.0.tgz /Users/johnathan/.npm/343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz.lock
+703 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.2.0.tgz',
+703 verbose addRemoteTarball   '9c4d63ce9e4f8e95de2d574e18f7925554a8a8ef' ]
+704 info retry fetch attempt 1 at 10:46:01
+705 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz
+706 http GET https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+707 http 200 https://registry.npmjs.org/base64-js/0.0.2
+708 silly registry.get cb [ 200,
+708 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:01 GMT',
+708 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+708 silly registry.get     etag: '"AIIBP46A5AS5UE4NPNFZT5ZBZ"',
+708 silly registry.get     'content-type': 'application/json',
+708 silly registry.get     'cache-control': 'max-age=60',
+708 silly registry.get     'content-length': '794',
+708 silly registry.get     'accept-ranges': 'bytes',
+708 silly registry.get     via: '1.1 varnish',
+708 silly registry.get     age: '0',
+708 silly registry.get     'x-served-by': 'cache-fra1241-FRA',
+708 silly registry.get     'x-cache': 'HIT',
+708 silly registry.get     'x-cache-hits': '1',
+708 silly registry.get     'x-timer': 'S1426326361.443229,VS0,VE175',
+708 silly registry.get     vary: 'Accept',
+708 silly registry.get     'keep-alive': 'timeout=10, max=50',
+708 silly registry.get     connection: 'Keep-Alive' } ]
+709 silly lockFile ce521b13-rg-base64-js-base64-js-0-0-2-tgz https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz
+710 verbose lock https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz /Users/johnathan/.npm/ce521b13-rg-base64-js-base64-js-0-0-2-tgz.lock
+711 verbose addRemoteTarball [ 'https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz',
+711 verbose addRemoteTarball   '024f0f72afa25b75f9c0ee73cd4f55ec1bed9784' ]
+712 info retry fetch attempt 1 at 10:46:01
+713 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz
+714 http GET https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz
+715 http 200 https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+716 http 200 https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz
+717 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz
+718 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+719 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package /Users/johnathan/.npm/36f69664-361630-0-565609815530479-package.lock
+720 silly lockFile 673cfcf4-361630-0-565609815530479-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz
+721 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz /Users/johnathan/.npm/673cfcf4-361630-0-565609815530479-tmp-tgz.lock
+722 silly gunzTarPerm modes [ '755', '644' ]
+723 silly gunzTarPerm extractEntry package.json
+724 silly gunzTarPerm extractEntry README.md
+725 silly gunzTarPerm extractEntry lib/b64.js
+726 silly gunzTarPerm extractEntry test/runner.js
+727 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+728 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+729 silly lockFile 673cfcf4-361630-0-565609815530479-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz
+730 silly lockFile 673cfcf4-361630-0-565609815530479-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/tmp.tgz
+731 verbose tar pack [ '/Users/johnathan/.npm/base64-js/0.0.2/package.tgz',
+731 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package' ]
+732 verbose tarball /Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+733 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+734 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+735 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package /Users/johnathan/.npm/36f69664-361630-0-565609815530479-package.lock
+736 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+737 verbose lock tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz /Users/johnathan/.npm/9970df16--npm-base64-js-0-0-2-package-tgz.lock
+738 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+739 silly lockFile 36f69664-361630-0-565609815530479-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361630-0.565609815530479/package
+740 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+741 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+742 silly lockFile 2cdfc723-than-npm-base64-js-0-0-2-package /Users/johnathan/.npm/base64-js/0.0.2/package
+743 verbose lock /Users/johnathan/.npm/base64-js/0.0.2/package /Users/johnathan/.npm/2cdfc723-than-npm-base64-js-0-0-2-package.lock
+744 silly lockFile 2cdfc723-than-npm-base64-js-0-0-2-package /Users/johnathan/.npm/base64-js/0.0.2/package
+745 silly lockFile 2cdfc723-than-npm-base64-js-0-0-2-package /Users/johnathan/.npm/base64-js/0.0.2/package
+746 verbose tar unpack /Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+747 silly lockFile ac81f2b1-than-npm-base64-js-0-0-2-package tar:///Users/johnathan/.npm/base64-js/0.0.2/package
+748 verbose lock tar:///Users/johnathan/.npm/base64-js/0.0.2/package /Users/johnathan/.npm/ac81f2b1-than-npm-base64-js-0-0-2-package.lock
+749 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+750 verbose lock tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz /Users/johnathan/.npm/9970df16--npm-base64-js-0-0-2-package-tgz.lock
+751 silly gunzTarPerm modes [ '755', '644' ]
+752 silly gunzTarPerm extractEntry package.json
+753 silly gunzTarPerm extractEntry README.md
+754 silly gunzTarPerm extractEntry lib/b64.js
+755 silly gunzTarPerm extractEntry test/runner.js
+756 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz
+757 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+758 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package /Users/johnathan/.npm/0393aed0-1624-0-42493569594807923-package.lock
+759 silly lockFile 6bd9e44d-1624-0-42493569594807923-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz
+760 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz /Users/johnathan/.npm/6bd9e44d-1624-0-42493569594807923-tmp-tgz.lock
+761 silly gunzTarPerm modes [ '755', '644' ]
+762 silly gunzTarPerm extractEntry package.json
+763 silly lockFile ac81f2b1-than-npm-base64-js-0-0-2-package tar:///Users/johnathan/.npm/base64-js/0.0.2/package
+764 silly lockFile ac81f2b1-than-npm-base64-js-0-0-2-package tar:///Users/johnathan/.npm/base64-js/0.0.2/package
+765 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+766 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+767 silly gunzTarPerm extractEntry README.md
+768 silly gunzTarPerm extractEntry LICENSE
+769 verbose chmod /Users/johnathan/.npm/base64-js/0.0.2/package.tgz 644
+770 verbose chown /Users/johnathan/.npm/base64-js/0.0.2/package.tgz [ 501, 20 ]
+771 silly lockFile ce521b13-rg-base64-js-base64-js-0-0-2-tgz https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz
+772 silly lockFile ce521b13-rg-base64-js-base64-js-0-0-2-tgz https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz
+773 silly lockFile 2f74027a-base64-js-0-0-2 base64-js@0.0.2
+774 silly lockFile 2f74027a-base64-js-0-0-2 base64-js@0.0.2
+775 silly gunzTarPerm extractEntry include_dirs.js
+776 silly gunzTarPerm extractEntry .dntrc
+777 silly gunzTarPerm extractEntry build/config.gypi
+778 silly gunzTarPerm extractEntry nan.h
+779 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+780 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+781 silly lockFile 6bd9e44d-1624-0-42493569594807923-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz
+782 silly lockFile 6bd9e44d-1624-0-42493569594807923-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/tmp.tgz
+783 verbose tar pack [ '/Users/johnathan/.npm/nan/1.2.0/package.tgz',
+783 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package' ]
+784 verbose tarball /Users/johnathan/.npm/nan/1.2.0/package.tgz
+785 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+786 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+787 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package /Users/johnathan/.npm/0393aed0-1624-0-42493569594807923-package.lock
+788 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+789 verbose lock tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz /Users/johnathan/.npm/4118822c-nathan-npm-nan-1-2-0-package-tgz.lock
+790 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+791 silly lockFile 0393aed0-1624-0-42493569594807923-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326361624-0.42493569594807923/package
+792 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+793 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+794 silly lockFile 6444ef18--johnathan-npm-nan-1-2-0-package /Users/johnathan/.npm/nan/1.2.0/package
+795 verbose lock /Users/johnathan/.npm/nan/1.2.0/package /Users/johnathan/.npm/6444ef18--johnathan-npm-nan-1-2-0-package.lock
+796 silly lockFile 6444ef18--johnathan-npm-nan-1-2-0-package /Users/johnathan/.npm/nan/1.2.0/package
+797 silly lockFile 6444ef18--johnathan-npm-nan-1-2-0-package /Users/johnathan/.npm/nan/1.2.0/package
+798 verbose tar unpack /Users/johnathan/.npm/nan/1.2.0/package.tgz
+799 silly lockFile e58de738--johnathan-npm-nan-1-2-0-package tar:///Users/johnathan/.npm/nan/1.2.0/package
+800 verbose lock tar:///Users/johnathan/.npm/nan/1.2.0/package /Users/johnathan/.npm/e58de738--johnathan-npm-nan-1-2-0-package.lock
+801 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+802 verbose lock tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz /Users/johnathan/.npm/4118822c-nathan-npm-nan-1-2-0-package-tgz.lock
+803 silly gunzTarPerm modes [ '755', '644' ]
+804 silly gunzTarPerm extractEntry package.json
+805 silly gunzTarPerm extractEntry README.md
+806 silly gunzTarPerm extractEntry LICENSE
+807 silly gunzTarPerm extractEntry include_dirs.js
+808 silly gunzTarPerm extractEntry .dntrc
+809 silly gunzTarPerm extractEntry build/config.gypi
+810 silly gunzTarPerm extractEntry nan.h
+811 silly lockFile e58de738--johnathan-npm-nan-1-2-0-package tar:///Users/johnathan/.npm/nan/1.2.0/package
+812 silly lockFile e58de738--johnathan-npm-nan-1-2-0-package tar:///Users/johnathan/.npm/nan/1.2.0/package
+813 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+814 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+815 verbose chmod /Users/johnathan/.npm/nan/1.2.0/package.tgz 644
+816 verbose chown /Users/johnathan/.npm/nan/1.2.0/package.tgz [ 501, 20 ]
+817 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+818 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+819 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+820 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+821 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+822 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+823 silly resolved [ { name: 'nan',
+823 silly resolved     version: '1.2.0',
+823 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+823 silly resolved     main: 'include_dirs.js',
+823 silly resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+823 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+823 silly resolved     license: 'MIT',
+823 silly resolved     readme: 'Native Abstractions for Node.js\n===============================\n\n**A header file filled with macro and utility goodness for making add-on development for Node.js easier across versions 0.8, 0.10 and 0.11, and eventually 0.12.**\n\n***Current version: 1.2.0*** *(See [nan.h](https://github.com/rvagg/nan/blob/master/nan.h) for complete ChangeLog)*\n\n[![NPM](https://nodei.co/npm/nan.png?downloads=true)](https://nodei.co/npm/nan/) [![NPM](https://nodei.co/npm-dl/nan.png?months=6)](https://nodei.co/npm/nan/)\n\nThanks to the crazy changes in V8 (and some in Node core), keeping native addons compiling happily across versions, particularly 0.10 to 0.11/0.12, is a minor nightmare. The goal of this project is to store all logic necessary to develop native Node.js addons without having to inspect `NODE_MODULE_VERSION` and get yourself into a macro-tangle.\n\nThis project also contains some helper utilities that make addon development a bit more pleasant.\n\n * **[News & Updates](#news)**\n * **[Usage](#usage)**\n * **[Example](#example)**\n * **[API](#api)**\n\n<a name="news"></a>\n## News & Updates\n\n### May-2014: 1.1.0 release\n\n* We\'ve deprecated `NanSymbol()`, you should just use `NanNew<String>()` now.\n* `NanNull()`, `NanUndefined()`, `NanTrue()`, `NanFalse()` all return `Local`s now.\n* `nan_isolate` is gone, it was intended to be internal-only but if you were using it then you should switch to `v8::Isolate::GetCurrent()`.\n* `NanNew()` has received some additional overload-love so you should be able to give it many kinds of values without specifying the `<Type>`.\n* Lots of small fixes and additions to expand the V8 API coverage, *use the source, Luke*.\n\n\n### May-2014: Major changes for V8 3.25 / Node 0.11.13\n\nNode 0.11.11 and 0.11.12 were both broken releases for native add-ons, you simply can\'t properly compile against either of them for different reasons. But we now have a 0.11.13 release that jumps a couple of versions of V8 ahead and includes some more, major (traumatic) API changes.\n\nBecause we are now nearing Node 0.12 and estimate that the version of V8 we are using in Node 0.11.13 will be close to the API we get for 0.12, we have taken the opportunity to not only *fix* NAN for 0.11.13 but make some major changes to improve the NAN API.\n\nWe have **removed support for Node 0.11 versions prior to 0.11.13**. As usual, our tests are run against (and pass) the last 5 versions of Node 0.8 and Node 0.10. We also include Node 0.11.13 obviously.\n\nThe major change is something that [Benjamin Byholm](kkoopa) has put many hours in to. We now have a fantastic new `NanNew<T>(args)` interface for creating new `Local`s, this replaces `NanNewLocal()` and much more. If you look in [./nan.h](nan.h) you\'ll see a large number of overloaded versions of this method. In general you should be able to `NanNew<Type>(arguments)` for any type you want to make a `Local` from. This includes `Persistent` types, so we now have a `Local<T> NanNew(const Persistent<T> arg)` to replace `NanPersistentToLocal()`.\n\nWe also now have `NanUndefined()`, `NanNull()`, `NanTrue()` and `NanFalse()`. Mainly because of the new requirement for an `Isolate` argument for each of the native V8 versions of this.\n\nV8 has now introduced an `EscapableHandleScope` from which you `scope.Escape(Local<T> value)` to *return* a value from a one scope to another. This replaces the standard `HandleScope` and `scope.Close(Local<T> value)`, although `HandleScope` still exists for when you don\'t need to return a handle to the caller. For NAN we are exposing it as `NanEscapableScope()` and `NanEscapeScope()`, while `NanScope()` is still how you create a new scope that doesn\'t need to return handles. For older versions of Node/V8, it\'ll still map to the older `HandleScope` functionality.\n\n`NanFromV8String()` was deprecated and has now been removed. You should use `NanCString()` or `NanRawString()` instead.\n\nBecause `node::MakeCallback()` now takes an `Isolate`, and because it doesn\'t exist in older versions of Node, we\'ve introduced `NanMakeCallback()`. You should *always* use this when calling a JavaScript function from C++.\n\nThere\'s lots more, check out the Changelog in nan.h or look through [#86](https://github.com/rvagg/nan/pull/86) for all the gory details.\n\n### Dec-2013: NanCString and NanRawString\n\nTwo new functions have been introduced to replace the functionality that\'s been provided by `NanFromV8String` until now. NanCString has sensible defaults so it\'s super easy to fetch a null-terminated c-style string out of a `v8::String`. `NanFromV8String` is still around and has defaults that allow you to pass a single handle to fetch a `char*` while `NanRawString` requires a little more attention to arguments.\n\n### Nov-2013: Node 0.11.9+ breaking V8 change\n\nThe version of V8 that\'s shipping with Node 0.11.9+ has changed the signature for new `Local`s to: `v8::Local<T>::New(isolate, value)`, i.e. introducing the `isolate` argument and therefore breaking all new `Local` declarations for previous versions. NAN 0.6+ now includes a `NanNewLocal<T>(value)` that can be used in place to work around this incompatibility and maintain compatibility with 0.8->0.11.9+ (minus a few early 0.11 releases).\n\nFor example, if you wanted to return a `null` on a callback you will have to change the argument from `v8::Local<v8::Value>::New(v8::Null())` to `NanNewLocal<v8::Value>(v8::Null())`.\n\n### Nov-2013: Change to binding.gyp `"include_dirs"` for NAN\n\nInclusion of NAN in a project\'s binding.gyp is now greatly simplified. You can now just use `"<!(node -e \\"require(\'nan\')\\")"` in your `"include_dirs"`, see example below (note Windows needs the quoting around `require` to be just right: `"require(\'nan\')"` with appropriate `\\` escaping).\n\n<a name="usage"></a>\n## Usage\n\nSimply add **NAN** as a dependency in the *package.json* of your Node addon:\n\n``` bash\n$ npm install --save nan\n```\n\nPull in the path to **NAN** in your *binding.gyp* so that you can use `#include <nan.h>` in your *.cpp* files:\n\n``` python\n"include_dirs" : [\n    "<!(node -e \\"require(\'nan\')\\")"\n]\n```\n\nThis works like a `-I<path-to-NAN>` when compiling your addon.\n\n<a name="example"></a>\n## Example\n\nSee **[LevelDOWN](https://github.com/rvagg/node-leveldown/pull/48)** for a full example of **NAN** in use.\n\nFor a simpler example, see the **[async pi estimation example](https://github.com/rvagg/nan/tree/master/examples/async_pi_estimate)** in the examples directory for full code and an explanation of what this Monte Carlo Pi estimation example does. Below are just some parts of the full example that illustrate the use of **NAN**.\n\nCompare to the current 0.10 version of this example, found in the [node-addon-examples](https://github.com/rvagg/node-addon-examples/tree/master/9_async_work) repository and also a 0.11 version of the same found [here](https://github.com/kkoopa/node-addon-examples/tree/5c01f58fc993377a567812597e54a83af69686d7/9_async_work).\n\nNote that there is no embedded version sniffing going on here and also the async work is made much simpler, see below for details on the `NanAsyncWorker` class.\n\n```c++\n// addon.cc\n#include <node.h>\n#include <nan.h>\n// ...\n\nusing v8::FunctionTemplate;\nusing v8::Handle;\nusing v8::Object;\nusing v8::String;\n\nvoid InitAll(Handle<Object> exports) {\n  exports->Set(NanNew<String>("calculateSync"),\n    NanNew<FunctionTemplate>(CalculateSync)->GetFunction());\n\n  exports->Set(NanNew<String>("calculateAsync"),\n    NanNew<FunctionTemplate>(CalculateAsync)->GetFunction());\n}\n\nNODE_MODULE(addon, InitAll)\n```\n\n```c++\n// sync.h\n#include <node.h>\n#include <nan.h>\n\nNAN_METHOD(CalculateSync);\n```\n\n```c++\n// sync.cc\n#include <node.h>\n#include <nan.h>\n#include "./sync.h"\n// ...\n\nusing v8::Number;\n\n// Simple synchronous access to the `Estimate()` function\nNAN_METHOD(CalculateSync) {\n  NanScope();\n\n  // expect a number as the first argument\n  int points = args[0]->Uint32Value();\n  double est = Estimate(points);\n\n  NanReturnValue(NanNew<Number>(est));\n}\n```\n\n```c++\n// async.cc\n#include <node.h>\n#include <nan.h>\n#include "./async.h"\n\n// ...\n\nusing v8::Function;\nusing v8::Local;\nusing v8::Null;\nusing v8::Number;\nusing v8::Value;\n\nclass PiWorker : public NanAsyncWorker {\n public:\n  PiWorker(NanCallback *callback, int points)\n    : NanAsyncWorker(callback), points(points) {}\n  ~PiWorker() {}\n\n  // Executed inside the worker-thread.\n  // It is not safe to access V8, or V8 data structures\n  // here, so everything we need for input and output\n  // should go on `this`.\n  void Execute () {\n    estimate = Estimate(points);\n  }\n\n  // Executed when the async work is complete\n  // this function will be run inside the main event loop\n  // so it is safe to use V8 again\n  void HandleOKCallback () {\n    NanScope();\n\n    Local<Value> argv[] = {\n        NanNull()\n      , NanNew<Number>(estimate)\n    };\n\n    callback->Call(2, argv);\n  };\n\n private:\n  int points;\n  double estimate;\n};\n\n// Asynchronous access to the `Estimate()` function\nNAN_METHOD(CalculateAsync) {\n  NanScope();\n\n  int points = args[0]->Uint32Value();\n  NanCallback *callback = new NanCallback(args[1].As<Function>());\n\n  NanAsyncQueueWorker(new PiWorker(callback, points));\n  NanReturnUndefined();\n}\n```\n\n<a name="api"></a>\n## API\n\n * <a href="#api_nan_method"><b><code>NAN_METHOD</code></b></a>\n * <a href="#api_nan_getter"><b><code>NAN_GETTER</code></b></a>\n * <a href="#api_nan_setter"><b><code>NAN_SETTER</code></b></a>\n * <a href="#api_nan_property_getter"><b><code>NAN_PROPERTY_GETTER</code></b></a>\n * <a href="#api_nan_property_setter"><b><code>NAN_PROPERTY_SETTER</code></b></a>\n * <a href="#api_nan_property_enumerator"><b><code>NAN_PROPERTY_ENUMERATOR</code></b></a>\n * <a href="#api_nan_property_deleter"><b><code>NAN_PROPERTY_DELETER</code></b></a>\n * <a href="#api_nan_property_query"><b><code>NAN_PROPERTY_QUERY</code></b></a>\n * <a href="#api_nan_index_getter"><b><code>NAN_INDEX_GETTER</code></b></a>\n * <a href="#api_nan_index_setter"><b><code>NAN_INDEX_SETTER</code></b></a>\n * <a href="#api_nan_index_enumerator"><b><code>NAN_INDEX_ENUMERATOR</code></b></a>\n * <a href="#api_nan_index_deleter"><b><code>NAN_INDEX_DELETER</code></b></a>\n * <a href="#api_nan_index_query"><b><code>NAN_INDEX_QUERY</code></b></a>\n * <a href="#api_nan_weak_callback"><b><code>NAN_WEAK_CALLBACK</code></b></a>\n * <a href="#api_nan_deprecated"><b><code>NAN_DEPRECATED</code></b></a>\n * <a href="#api_nan_inline"><b><code>NAN_INLINE</code></b></a>\n * <a href="#api_nan_new"><b><code>NanNew</code></b></a>\n * <a href="#api_nan_undefined"><b><code>NanUndefined</code></b></a>\n * <a href="#api_nan_null"><b><code>NanNull</code></b></a>\n * <a href="#api_nan_true"><b><code>NanTrue</code></b></a>\n * <a href="#api_nan_false"><b><code>NanFalse</code></b></a>\n * <a href="#api_nan_return_value"><b><code>NanReturnValue</code></b></a>\n * <a href="#api_nan_return_undefined"><b><code>NanReturnUndefined</code></b></a>\n * <a href="#api_nan_return_null"><b><code>NanReturnNull</code></b></a>\n * <a href="#api_nan_return_empty_string"><b><code>NanReturnEmptyString</code></b></a>\n * <a href="#api_nan_scope"><b><code>NanScope</code></b></a>\n * <a href="#api_nan_escapable_scope"><b><code>NanEscapableScope</code></b></a>\n * <a href="#api_nan_escape_scope"><b><code>NanEscapeScope</code></b></a>\n * <a href="#api_nan_locker"><b><code>NanLocker</code></b></a>\n * <a href="#api_nan_unlocker"><b><code>NanUnlocker</code></b></a>\n * <a href="#api_nan_get_internal_field_pointer"><b><code>NanGetInternalFieldPointer</code></b></a>\n * <a href="#api_nan_set_internal_field_pointer"><b><code>NanSetInternalFieldPointer</code></b></a>\n * <a href="#api_nan_object_wrap_handle"><b><code>NanObjectWrapHandle</code></b></a>\n * <del><a href="#api_nan_symbol"><b><code>NanSymbol</code></b></a></del>\n * <a href="#api_nan_get_pointer_safe"><b><code>NanGetPointerSafe</code></b></a>\n * <a href="#api_nan_set_pointer_safe"><b><code>NanSetPointerSafe</code></b></a>\n * <a href="#api_nan_raw_string"><b><code>NanRawString</code></b></a>\n * <a href="#api_nan_c_string"><b><code>NanCString</code></b></a>\n * <a href="#api_nan_boolean_option_value"><b><code>NanBooleanOptionValue</code></b></a>\n * <a href="#api_nan_uint32_option_value"><b><code>NanUInt32OptionValue</code></b></a>\n * <a href="#api_nan_error"><b><code>NanError</code></b>, <b><code>NanTypeError</code></b>, <b><code>NanRangeError</code></b></a>\n * <a href="#api_nan_throw_error"><b><code>NanThrowError</code></b>, <b><code>NanThrowTypeError</code></b>, <b><code>NanThrowRangeError</code></b>, <b><code>NanThrowError(Handle<Value>)</code></b>, <b><code>NanThrowError(Handle<Value>, int)</code></b></a>\n * <a href="#api_nan_new_buffer_handle"><b><code>NanNewBufferHandle(char *, size_t, FreeCallback, void *)</code></b>, <b><code>NanNewBufferHandle(char *, uint32_t)</code></b>, <b><code>NanNewBufferHandle(uint32_t)</code></b></a>\n * <a href="#api_nan_buffer_use"><b><code>NanBufferUse(char *, uint32_t)</code></b></a>\n * <a href="#api_nan_new_context_handle"><b><code>NanNewContextHandle</code></b></a>\n * <a href="#api_nan_get_current_context"><b><code>NanGetCurrentContext</code></b></a>\n * <a href="#api_nan_has_instance"><b><code>NanHasInstance</code></b></a>\n * <a href="#api_nan_dispose_persistent"><b><code>NanDisposePersistent</code></b></a>\n * <a href="#api_nan_assign_persistent"><b><code>NanAssignPersistent</code></b></a>\n * <a href="#api_nan_make_weak_persistent"><b><code>NanMakeWeakPersistent</code></b></a>\n * <a href="#api_nan_set_template"><b><code>NanSetTemplate</code></b></a>\n * <a href="#api_nan_set_prototype_template"><b><code>NanSetPrototypeTemplate</code></b></a>\n * <a href="#api_nan_make_callback"><b><code>NanMakeCallback</code></b></a>\n * <a href="#api_nan_compile_script"><b><code>NanCompileScript</code></b></a>\n * <a href="#api_nan_run_script"><b><code>NanRunScript</code></b></a>\n * <a href="#api_nan_adjust_external_memory"><b><code>NanAdjustExternalMemory</code></b></a>\n * <a href="#api_nan_add_gc_epilogue_callback"><b><code>NanAddGCEpilogueCallback</code></b></a>\n * <a href="#api_nan_add_gc_prologue_callback"><b><code>NanAddGCPrologueCallback</code></b></a>\n * <a href="#api_nan_remove_gc_epilogue_callback"><b><code>NanRemoveGCEpilogueCallback</code></b></a>\n * <a href="#api_nan_remove_gc_prologue_callback"><b><code>NanRemoveGCPrologueCallback</code></b></a>\n * <a href="#api_nan_get_heap_statistics"><b><code>NanGetHeapStatistics</code></b></a>\n * <a href="#api_nan_callback"><b><code>NanCallback</code></b></a>\n * <a href="#api_nan_async_worker"><b><code>NanAsyncWorker</code></b></a>\n * <a href="#api_nan_async_queue_worker"><b><code>NanAsyncQueueWorker</code></b></a>\n\n<a name="api_nan_method"></a>\n### NAN_METHOD(methodname)\n\nUse `NAN_METHOD` to define your V8 accessible methods:\n\n```c++\n// .h:\nclass Foo : public node::ObjectWrap {\n  ...\n\n  static NAN_METHOD(Bar);\n  static NAN_METHOD(Baz);\n}\n\n\n// .cc:\nNAN_METHOD(Foo::Bar) {\n  ...\n}\n\nNAN_METHOD(Foo::Baz) {\n  ...\n}\n```\n\nThe reason for this macro is because of the method signature change in 0.11:\n\n```c++\n// 0.10 and below:\nHandle<Value> name(const Arguments& args)\n\n// 0.11 and above\nvoid name(const FunctionCallbackInfo<Value>& args)\n```\n\nThe introduction of `FunctionCallbackInfo` brings additional complications:\n\n<a name="api_nan_getter"></a>\n### NAN_GETTER(methodname)\n\nUse `NAN_GETTER` to declare your V8 accessible getters. You get a `Local<String>` `property` and an appropriately typed `args` object that can act like the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_GETTER`.\n\n<a name="api_nan_setter"></a>\n### NAN_SETTER(methodname)\n\nUse `NAN_SETTER` to declare your V8 accessible setters. Same as `NAN_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_property_getter"></a>\n### NAN_PROPERTY_GETTER(cbname)\nUse `NAN_PROPERTY_GETTER` to declare your V8 accessible property getters. You get a `Local<String>` `property` and an appropriately typed `args` object that can act similar to the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_GETTER`.\n\n<a name="api_nan_property_setter"></a>\n### NAN_PROPERTY_SETTER(cbname)\nUse `NAN_PROPERTY_SETTER` to declare your V8 accessible property setters. Same as `NAN_PROPERTY_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_property_enumerator"></a>\n### NAN_PROPERTY_ENUMERATOR(cbname)\nUse `NAN_PROPERTY_ENUMERATOR` to declare your V8 accessible property enumerators. You get an appropriately typed `args` object like the `args` argument to a `NAN_PROPERTY_GETTER` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_ENUMERATOR`.\n\n<a name="api_nan_property_deleter"></a>\n### NAN_PROPERTY_DELETER(cbname)\nUse `NAN_PROPERTY_DELETER` to declare your V8 accessible property deleters. Same as `NAN_PROPERTY_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_DELETER`.\n\n<a name="api_nan_property_query"></a>\n### NAN_PROPERTY_QUERY(cbname)\nUse `NAN_PROPERTY_QUERY` to declare your V8 accessible property queries. Same as `NAN_PROPERTY_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_QUERY`.\n\n<a name="api_nan_index_getter"></a>\n### NAN_INDEX_GETTER(cbname)\nUse `NAN_INDEX_GETTER` to declare your V8 accessible index getters. You get a `uint32_t` `index` and an appropriately typed `args` object that can act similar to the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_GETTER`.\n\n<a name="api_nan_index_setter"></a>\n### NAN_INDEX_SETTER(cbname)\nUse `NAN_INDEX_SETTER` to declare your V8 accessible index setters. Same as `NAN_INDEX_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_index_enumerator"></a>\n### NAN_INDEX_ENUMERATOR(cbname)\nUse `NAN_INDEX_ENUMERATOR` to declare your V8 accessible index enumerators. You get an appropriately typed `args` object like the `args` argument to a `NAN_INDEX_GETTER` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_ENUMERATOR`.\n\n<a name="api_nan_index_deleter"></a>\n### NAN_INDEX_DELETER(cbname)\nUse `NAN_INDEX_DELETER` to declare your V8 accessible index deleters. Same as `NAN_INDEX_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_DELETER`.\n\n<a name="api_nan_index_query"></a>\n### NAN_INDEX_QUERY(cbname)\nUse `NAN_INDEX_QUERY` to declare your V8 accessible index queries. Same as `NAN_INDEX_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_QUERY`.\n\n<a name="api_nan_weak_callback"></a>\n### NAN_WEAK_CALLBACK(cbname)\n\nUse `NAN_WEAK_CALLBACK` to define your V8 WeakReference callbacks. There is an argument object `const _NanWeakCallbackData<T, P> &data` allowing access to the weak object and the supplied parameter through its `GetValue` and `GetParameter` methods. You can even access the weak callback info object through the `GetCallbackInfo()`method, but you probably should not. `Revive()` keeps the weak object alive until the next GC round.\n\n```c++\nNAN_WEAK_CALLBACK(weakCallback) {\n  int *parameter = data.GetParameter();\n  NanMakeCallback(NanGetCurrentContext()->Global(), data.GetValue(), 0, NULL);\n  if ((*parameter)++ == 0) {\n    data.Revive();\n  } else {\n    delete parameter;\n  }\n}\n```\n\n<a name="api_nan_deprecated"></a>\n### NAN_DEPRECATED\nDeclares a function as deprecated.\n\n```c++\nstatic NAN_DEPRECATED NAN_METHOD(foo) {\n  ...\n}\n```\n\n<a name="api_nan_inline"></a>\n### NAN_INLINE\nInlines a function.\n\n```c++\nNAN_INLINE int foo(int bar) {\n  ...\n}\n```\n\n<a name="api_nan_new"></a>\n### Local&lt;T&gt; NanNew&lt;T&gt;( ... )\n\nUse `NanNew` to construct almost all v8 objects and make new local handles.\n\n```c++\nLocal<String> s = NanNew<String>("value");\n\n...\n\nPersistent<Object> o;\n\n...\n\nLocal<Object> lo = NanNew(o);\n\n```\n\n<a name="api_nan_undefined"></a>\n### Local&lt;Primitive&gt; NanUndefined()\n\nUse instead of `Undefined()`\n\n<a name="api_nan_null"></a>\n### Local&lt;Primitive&gt; NanNull()\n\nUse instead of `Null()`\n\n<a name="api_nan_true"></a>\n### Local&lt;Boolean&gt; NanTrue()\n\nUse instead of `True()`\n\n<a name="api_nan_false"></a>\n### Local&lt;Boolean&gt; NanFalse()\n\nUse instead of `False()`\n\n<a name="api_nan_return_value"></a>\n### NanReturnValue(Handle&lt;Value&gt;)\n\nUse `NanReturnValue` when you want to return a value from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  ...\n\n  NanReturnValue(NanNew<String>("FooBar!"));\n}\n```\n\nNo `return` statement required.\n\n<a name="api_nan_return_undefined"></a>\n### NanReturnUndefined()\n\nUse `NanReturnUndefined` when you don\'t want to return anything from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnUndefined();\n}\n```\n\n<a name="api_nan_return_null"></a>\n### NanReturnNull()\n\nUse `NanReturnNull` when you want to return `Null` from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnNull();\n}\n```\n\n<a name="api_nan_return_empty_string"></a>\n### NanReturnEmptyString()\n\nUse `NanReturnEmptyString` when you want to return an empty `String` from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnEmptyString();\n}\n```\n\n<a name="api_nan_scope"></a>\n### NanScope()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanScope()` necessary, use it in place of `HandleScope scope` when you do not wish to return handles (`Handle` or `Local`) to the surrounding scope (or in functions directly exposed to V8, as they do not return values in the normal sense):\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanScope();\n\n  NanReturnValue(NanNew<String>("FooBar!"));\n}\n```\n\nThis method is not directly exposed to V8, nor does it return a handle, so it uses an unescapable scope:\n\n```c++\nbool Foo::Bar() {\n  NanScope();\n  \n  Local<Boolean> val = NanFalse();\n  ...\n  return val->Value();\n}\n```\n\n<a name="api_nan_escapable_scope"></a>\n### NanEscapableScope()\n\nThe separation of handle scopes into escapable and inescapable scopes makes `NanEscapableScope()` necessary, use it in place of `HandleScope scope` when you later wish to return a handle (`Handle` or `Local`) from the scope, this is for internal functions not directly exposed to V8:\n\n```c++\nHandle<String> Foo::Bar() {\n  NanEscapableScope();\n\n  return NanEscapeScope(NanNew<String>("FooBar!"));\n}\n```\n\n<a name="api_nan_escape_scope"></a>\n### Local&lt;T&gt; NanEscapeScope(Handle&lt;T&gt; value);\nUse together with `NanEscapableScope` to escape the scope. Corresponds to `HandleScope::Close` or `EscapableHandleScope::Escape`.\n\n<a name="api_nan_locker"></a>\n### NanLocker()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanLocker()` necessary, use it in place of `Locker locker`:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanLocker();\n  ...\n  NanUnlocker();\n}\n```\n\n<a name="api_nan_unlocker"></a>\n### NanUnlocker()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanUnlocker()` necessary, use it in place of `Unlocker unlocker`:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanLocker();\n  ...\n  NanUnlocker();\n}\n```\n\n<a name="api_nan_get_internal_field_pointer"></a>\n### void * NanGetInternalFieldPointer(Handle&lt;Object&gt;, int)\n\nGets a pointer to the internal field with at `index` from a V8 `Object` handle.\n\n```c++\nLocal<Object> obj;\n...\nNanGetInternalFieldPointer(obj, 0);\n```\n<a name="api_nan_set_internal_field_pointer"></a>\n### void NanSetInternalFieldPointer(Handle&lt;Object&gt;, int, void *)\n\nSets the value of the internal field at `index` on a V8 `Object` handle.\n\n```c++\nstatic Persistent<Function> dataWrapperCtor;\n...\nLocal<Object> wrapper = NanNew(dataWrapperCtor)->NewInstance();\nNanSetInternalFieldPointer(wrapper, 0, this);\n```\n\n<a name="api_nan_object_wrap_handle"></a>\n### Local&lt;Object&gt; NanObjectWrapHandle(Object)\n\nWhen you want to fetch the V8 object handle from a native object you\'ve wrapped with Node\'s `ObjectWrap`, you should use `NanObjectWrapHandle`:\n\n```c++\nNanObjectWrapHandle(iterator)->Get(NanNew<String>("end"))\n```\n\n<a name="api_nan_symbol"></a>\n### <del>Local&lt;String&gt; NanSymbol(const char *)</del>\n\nDeprecated. Use `NanNew<String>` instead.\n<del>Use to create string symbol objects (i.e. `v8::String::NewSymbol(x)`), for getting and setting object properties, or names of objects.</del>\n\n```c++\nbool foo = false;\nif (obj->Has(NanNew<String>("foo")))\n  foo = optionsObj->Get(NanNew<String>("foo"))->BooleanValue()\n```\n\n<a name="api_nan_get_pointer_safe"></a>\n### Type NanGetPointerSafe(Type *[, Type])\n\nA helper for getting values from optional pointers. If the pointer is `NULL`, the function returns the optional default value, which defaults to `0`.  Otherwise, the function returns the value the pointer points to.\n\n```c++\nchar *plugh(uint32_t *optional) {\n  char res[] = "xyzzy";\n  uint32_t param = NanGetPointerSafe<uint32_t>(optional, 0x1337);\n  switch (param) {\n    ...\n  }\n  NanSetPointerSafe<uint32_t>(optional, 0xDEADBEEF);\n}  \n```\n\n<a name="api_nan_set_pointer_safe"></a>\n### bool NanSetPointerSafe(Type *, Type)\n\nA helper for setting optional argument pointers. If the pointer is `NULL`, the function simply returns `false`.  Otherwise, the value is assigned to the variable the pointer points to.\n\n```c++\nconst char *plugh(size_t *outputsize) {\n  char res[] = "xyzzy";\n  if !(NanSetPointerSafe<size_t>(outputsize, strlen(res) + 1)) {\n    ...\n  }\n\n  ...\n}\n```\n\n<a name="api_nan_raw_string"></a>\n### void* NanRawString(Handle&lt;Value&gt;, enum Nan::Encoding, size_t *, void *, size_t, int)\n\nWhen you want to convert a V8 `String` to a `char*` buffer, use `NanRawString`. You have to supply an encoding as well as a pointer to a variable that will be assigned the number of bytes in the returned string. It is also possible to supply a buffer and its length to the function in order not to have a new buffer allocated. The final argument allows setting `String::WriteOptions`.\nJust remember that you\'ll end up with an object that you\'ll need to `delete[]` at some point unless you supply your own buffer:\n\n```c++\nsize_t count;\nvoid* decoded = NanRawString(args[1], Nan::BASE64, &count, NULL, 0, String::HINT_MANY_WRITES_EXPECTED);\n...\ndelete[] decoded;\n```\n\n<a name="api_nan_c_string"></a>\n### char* NanCString(Handle&lt;Value&gt;, size_t *[, char *, size_t, int])\n\nWhen you want to convert a V8 `String` to a null-terminated C `char*` use `NanCString`. The resulting `char*` will be UTF-8-encoded, and you need to supply a pointer to a variable that will be assigned the number of bytes in the returned string. It is also possible to supply a buffer and its length to the function in order not to have a new buffer allocated. The final argument allows optionally setting `String::WriteOptions`, which default to `v8::String::NO_OPTIONS`.\nJust remember that you\'ll end up with an object that you\'ll need to `delete[]` at some point unless you supply your own buffer:\n\n```c++\nsize_t count;\nchar* name = NanCString(args[0], &count);\n...\ndelete[] name;\n```\n\n<a name="api_nan_boolean_option_value"></a>\n### bool NanBooleanOptionValue(Handle&lt;Value&gt;, Handle&lt;String&gt;[, bool])\n\nWhen you have an "options" object that you need to fetch properties from, boolean options can be fetched with this pair. They check first if the object exists (`IsEmpty`), then if the object has the given property (`Has`) then they get and convert/coerce the property to a `bool`.\n\nThe optional last parameter is the *default* value, which is `false` if left off:\n\n```c++\n// `foo` is false unless the user supplies a truthy value for it\nbool foo = NanBooleanOptionValue(optionsObj, NanNew<String>("foo"));\n// `bar` is true unless the user supplies a falsy value for it\nbool bar = NanBooleanOptionValueDefTrue(optionsObj, NanNew<String>("bar"), true);\n```\n\n<a name="api_nan_uint32_option_value"></a>\n### uint32_t NanUInt32OptionValue(Handle&lt;Value&gt;, Handle&lt;String&gt;, uint32_t)\n\nSimilar to `NanBooleanOptionValue`, use `NanUInt32OptionValue` to fetch an integer option from your options object. Can be any kind of JavaScript `Number` and it will be coerced to an unsigned 32-bit integer.\n\nRequires all 3 arguments as a default is not optional:\n\n```c++\nuint32_t count = NanUInt32OptionValue(optionsObj, NanNew<String>("count"), 1024);\n```\n\n<a name="api_nan_error"></a>\n### NanError(message), NanTypeError(message), NanRangeError(message)\n\nFor making `Error`, `TypeError` and `RangeError` objects.\n\n```c++\nLocal<Value> res = NanError("you must supply a callback argument");\n```\n\n<a name="api_nan_throw_error"></a>\n### NanThrowError(message), NanThrowTypeError(message), NanThrowRangeError(message), NanThrowError(Local&lt;Value&gt;), NanThrowError(Local&lt;Value&gt;, int)\n\nFor throwing `Error`, `TypeError` and `RangeError` objects.\n\n```c++\nNanThrowError("you must supply a callback argument");\n```\n\nCan also handle any custom object you may want to throw. If used with the error code argument, it will add the supplied error code to the error object as a property called `code`.\n\n<a name="api_nan_new_buffer_handle"></a>\n### Local&lt;Object&gt; NanNewBufferHandle(char *, uint32_t), Local&lt;Object&gt; NanNewBufferHandle(uint32_t)\n\nThe `Buffer` API has changed a little in Node 0.11, this helper provides consistent access to `Buffer` creation:\n\n```c++\nNanNewBufferHandle((char*)value.data(), value.size());\n```\n\nCan also be used to initialize a `Buffer` with just a `size` argument.\n\nCan also be supplied with a `NanFreeCallback` and a hint for the garbage collector.\n\n<a name="api_nan_buffer_use"></a>\n### Local&lt;Object&gt; NanBufferUse(char*, uint32_t)\n\n`Buffer::New(char*, uint32_t)` prior to 0.11 would make a copy of the data.\nWhile it was possible to get around this, it required a shim by passing a\ncallback. So the new API `Buffer::Use(char*, uint32_t)` was introduced to remove\nneeding to use this shim.\n\n`NanBufferUse` uses the `char*` passed as the backing data, and will free the\nmemory automatically when the weak callback is called. Keep this in mind, as\ncareless use can lead to "double free or corruption" and other cryptic failures.\n\n<a name="api_nan_has_instance"></a>\n### bool NanHasInstance(Persistent&lt;FunctionTemplate&gt;&, Handle&lt;Value&gt;)\n\nCan be used to check the type of an object to determine it is of a particular class you have already defined and have a `Persistent<FunctionTemplate>` handle for.\n\n<a name="api_nan_new_context_handle"></a>\n### Local&lt;Context&gt; NanNewContextHandle([ExtensionConfiguration*, Handle&lt;ObjectTemplate&gt;, Handle&lt;Value&gt;])\nCreates a new `Local<Context>` handle.\n\n```c++\nLocal<FunctionTemplate> ftmpl = NanNew<FunctionTemplate>();\nLocal<ObjectTemplate> otmpl = ftmpl->InstanceTemplate();\nLocal<Context> ctx =  NanNewContextHandle(NULL, otmpl);\n```\n\n<a name="api_nan_get_current_context"></a>\n### Local&lt;Context&gt; NanGetCurrentContext()\n\nGets the current context.\n\n```c++\nLocal<Context> ctx = NanGetCurrentContext();\n```\n\n<a name="api_nan_dispose_persistent"></a>\n### void NanDisposePersistent(Persistent&lt;T&gt; &)\n\nUse `NanDisposePersistent` to dispose a `Persistent` handle.\n\n```c++\nNanDisposePersistent(persistentHandle);\n```\n\n<a name="api_nan_assign_persistent"></a>\n### NanAssignPersistent(handle, object)\n\nUse `NanAssignPersistent` to assign a non-`Persistent` handle to a `Persistent` one. You can no longer just declare a `Persistent` handle and assign directly to it later, you have to `Reset` it in Node 0.11, so this makes it easier.\n\nIn general it is now better to place anything you want to protect from V8\'s garbage collector as properties of a generic `Object` and then assign that to a `Persistent`. This works in older versions of Node also if you use `NanAssignPersistent`:\n\n```c++\nPersistent<Object> persistentHandle;\n\n...\n\nLocal<Object> obj = NanNew<Object>();\nobj->Set(NanNew<String>("key"), keyHandle); // where keyHandle might be a Local<String>\nNanAssignPersistent(persistentHandle, obj)\n```\n\n<a name="api_nan_make_weak_persistent"></a>\n### _NanWeakCallbackInfo&lt;T, P&gt;* NanMakeWeakPersistent(Handle&lt;T&gt;, P*, _NanWeakCallbackInfo&lt;T, P&gt;::Callback)\n\nCreates a weak persistent handle with the supplied parameter and `NAN_WEAK_CALLBACK`.\n\n```c++\nNAN_WEAK_CALLBACK(weakCallback) {\n\n...\n\n}\n\nLocal<Function> func;\n\n...\n\nint *parameter = new int(0);\nNanMakeWeakPersistent(func, parameter, &weakCallback);\n```\n\n<a name="api_nan_set_template"></a>\n### NanSetTemplate(templ, name, value)\n\nUse to add properties on object and function templates.\n\n<a name="api_nan_set_prototype_template"></a>\n### NanSetPrototypeTemplate(templ, name, value)\n\nUse to add prototype properties on function templates.\n\n<a name="api_nan_make_callback"></a>\n### NanMakeCallback(target, func, argc, argv)\n\nUse instead of `node::MakeCallback` to call javascript functions. This is the only proper way of calling functions.\n\n<a name="api_nan_compile_script"></a>\n### NanCompileScript(Handle<String> s [, const ScriptOrigin&amp; origin])\n\nUse to create new scripts bound to the current context.\n\n<a name="api_nan_run_script"></a>\n### NanRunScript(script)\n\nUse to run both bound and unbound scripts.\n\n<a name="api_nan_adjust_external_memory"></a>\n### NanAdjustExternalMemory(int change_in_bytes)\n\nSimply does `AdjustAmountOfExternalAllocatedMemory`\n\n<a name="api_nan_add_gc_epilogue_callback"></a>\n### NanAddGCEpilogueCallback(GCEpilogueCallback callback, GCType gc_type_filter=kGCTypeAll)\n\nSimply does `AddGCEpilogueCallback`\n\n<a name="api_nan_add_gc_prologue_callback"></a>\n### NanAddGCPrologueCallback(GCPrologueCallback callback, GCType gc_type_filter=kGCTypeAll)\n\nSimply does `AddGCPrologueCallback`\n\n<a name="api_nan_remove_gc_epilogue_callback"></a>\n### NanRemoveGCEpilogueCallback(GCEpilogueCallback callback)\n\nSimply does `RemoveGCEpilogueCallback`\n\n<a name="api_nan_remove_gc_prologue_callback"></a>\n### NanRemoveGCPrologueCallback(GCPrologueCallback callback)\n\nSimply does `RemoveGCPrologueCallback`\n\n<a name="api_nan_get_heap_statistics"></a>\n### NanGetHeapStatistics(HeapStatistics *heap_statistics)\n\nSimply does `GetHeapStatistics`\n\n<a name="api_nan_callback"></a>\n### NanCallback\n\nBecause of the difficulties imposed by the changes to `Persistent` handles in V8 in Node 0.11, creating `Persistent` versions of your `Handle<Function>` is annoyingly tricky. `NanCallback` makes it easier by taking your handle, making it persistent until the `NanCallback` is deleted and even providing a handy `Call()` method to fetch and execute the callback `Function`.\n\n```c++\nLocal<Function> callbackHandle = args[0].As<Function>();\nNanCallback *callback = new NanCallback(callbackHandle);\n// pass `callback` around and it\'s safe from GC until you:\ndelete callback;\n```\n\nYou can execute the callback like so:\n\n```c++\n// no arguments:\ncallback->Call(0, NULL);\n\n// an error argument:\nHandle<Value> argv[] = {\n  NanError(NanNew<String>("fail!"))\n};\ncallback->Call(1, argv);\n\n// a success argument:\nHandle<Value> argv[] = {\n  NanNull(),\n  NanNew<String>("w00t!")\n};\ncallback->Call(2, argv);\n```\n\n`NanCallback` also has a `Local<Function> GetCallback()` method that you can use\nto fetch a local handle to the underlying callback function, as well  as a\n`void SetFunction(Handle<Function>)` for setting the callback on the\n`NanCallback`. You can check if a `NanCallback` is empty with the `bool IsEmpty()` method. Additionally a generic constructor is available for using\n`NanCallback` without performing heap allocations.\n\n<a name="api_nan_async_worker"></a>\n### NanAsyncWorker\n\n`NanAsyncWorker` is an abstract class that you can subclass to have much of the annoying async queuing and handling taken care of for you. It can even store arbitrary V8 objects for you and have them persist while the async work is in progress.\n\nSee a rough outline of the implementation:\n\n```c++\nclass NanAsyncWorker {\npublic:\n  NanAsyncWorker (NanCallback *callback);\n\n  // Clean up persistent handles and delete the *callback\n  virtual ~NanAsyncWorker ();\n\n  // Check the `ErrorMessage()` and call HandleOKCallback()\n  // or HandleErrorCallback depending on whether it has been set or not\n  virtual void WorkComplete ();\n\n  // You must implement this to do some async work. If there is an\n  // error then use `SetErrorMessage()` to set an error message and the callback will\n  // be passed that string in an Error object\n  virtual void Execute ();\n\n  // Save a V8 object in a Persistent handle to protect it from GC\n  void SaveToPersistent(const char *key, Local<Object> &obj);\n\n  // Fetch a stored V8 object (don\'t call from within `Execute()`)\n  Local<Object> GetFromPersistent(const char *key);\n  \n  // Get the error message (or NULL)\n  const char *ErrorMessage();\n  \n  // Set an error message\n  void SetErrorMessage(const char *msg);\n  \nprotected:\n  // Default implementation calls the callback function with no arguments.\n  // Override this to return meaningful data\n  virtual void HandleOKCallback ();\n\n  // Default implementation calls the callback function with an Error object\n  // wrapping the `errmsg` string\n  virtual void HandleErrorCallback ();\n};\n```\n\n<a name="api_nan_async_queue_worker"></a>\n### NanAsyncQueueWorker(NanAsyncWorker *)\n\n`NanAsyncQueueWorker` will run a `NanAsyncWorker` asynchronously via libuv. Both the *execute* and *after_work* steps are taken care of for you&mdash;most of the logic for this is embedded in `NanAsyncWorker`.\n\n### Contributors\n\nNAN is only possible due to the excellent work of the following contributors:\n\n<table><tbody>\n<tr><th align="left">Rod Vagg</th><td><a href="https://github.com/rvagg">GitHub/rvagg</a></td><td><a href="http://twitter.com/rvagg">Twitter/@rvagg</a></td></tr>\n<tr><th align="left">Benjamin Byholm</th><td><a href="https://github.com/kkoopa/">GitHub/kkoopa</a></td><td>-</td></tr>\n<tr><th align="left">Trevor Norris</th><td><a href="https://github.com/trevnorris">GitHub/trevnorris</a></td><td><a href="http://twitter.com/trevnorris">Twitter/@trevnorris</a></td></tr>\n<tr><th align="left">Nathan Rajlich</th><td><a href="https://github.com/TooTallNate">GitHub/TooTallNate</a></td><td><a href="http://twitter.com/TooTallNate">Twitter/@TooTallNate</a></td></tr>\n<tr><th align="left">Brett Lawson</th><td><a href="https://github.com/brett19">GitHub/brett19</a></td><td><a href="http://twitter.com/brett19x">Twitter/@brett19x</a></td></tr>\n<tr><th align="left">Ben Noordhuis</th><td><a href="https://github.com/bnoordhuis">GitHub/bnoordhuis</a></td><td><a href="http://twitter.com/bnoordhuis">Twitter/@bnoordhuis</a></td></tr>\n</tbody></table>\n\nLicence &amp; copyright\n-----------------------\n\nCopyright (c) 2014 NAN contributors (listed above).\n\nNative Abstractions for Node.js is licensed under an MIT +no-false-attribs license. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.\n',
+823 silly resolved     readmeFilename: 'README.md',
+823 silly resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+823 silly resolved     homepage: 'https://github.com/rvagg/nan',
+823 silly resolved     _id: 'nan@1.2.0',
+823 silly resolved     dist: { shasum: 'a86f47e80561c9299c170ba4dbc963ba630288ff' },
+823 silly resolved     _from: 'nan@~1.2.0',
+823 silly resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.2.0.tgz' } ]
+824 info install nan@1.2.0 into /usr/local/lib/node_modules/qrcode/node_modules/canvas
+825 info installOne nan@1.2.0
+826 info /usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan unbuild
+827 verbose tar unpack /Users/johnathan/.npm/nan/1.2.0/package.tgz
+828 silly lockFile 5e42465e--modules-canvas-node-modules-nan tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan
+829 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan /Users/johnathan/.npm/5e42465e--modules-canvas-node-modules-nan.lock
+830 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+831 verbose lock tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz /Users/johnathan/.npm/4118822c-nathan-npm-nan-1-2-0-package-tgz.lock
+832 silly gunzTarPerm modes [ '755', '644' ]
+833 silly gunzTarPerm extractEntry package.json
+834 silly gunzTarPerm extractEntry README.md
+835 silly gunzTarPerm extractEntry LICENSE
+836 silly gunzTarPerm extractEntry include_dirs.js
+837 silly gunzTarPerm extractEntry .dntrc
+838 silly gunzTarPerm extractEntry build/config.gypi
+839 silly gunzTarPerm extractEntry nan.h
+840 silly lockFile 5e42465e--modules-canvas-node-modules-nan tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan
+841 silly lockFile 5e42465e--modules-canvas-node-modules-nan tar:///usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan
+842 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+843 silly lockFile 4118822c-nathan-npm-nan-1-2-0-package-tgz tar:///Users/johnathan/.npm/nan/1.2.0/package.tgz
+844 info preinstall nan@1.2.0
+845 verbose readDependencies using package.json deps
+846 verbose readDependencies using package.json deps
+847 silly resolved []
+848 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan
+849 info build /usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules/nan
+850 verbose linkStuff [ true,
+850 verbose linkStuff   '/usr/local/lib/node_modules',
+850 verbose linkStuff   false,
+850 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules/canvas/node_modules' ]
+851 info linkStuff nan@1.2.0
+852 verbose linkBins nan@1.2.0
+853 verbose linkMans nan@1.2.0
+854 verbose rebuildBundles nan@1.2.0
+855 info install nan@1.2.0
+856 info postinstall nan@1.2.0
+857 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/canvas
+858 info build /usr/local/lib/node_modules/qrcode/node_modules/canvas
+859 verbose linkStuff [ true,
+859 verbose linkStuff   '/usr/local/lib/node_modules',
+859 verbose linkStuff   false,
+859 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules' ]
+860 info linkStuff canvas@1.1.6
+861 verbose linkBins canvas@1.1.6
+862 verbose linkMans canvas@1.1.6
+863 verbose rebuildBundles canvas@1.1.6
+864 verbose rebuildBundles [ 'nan' ]
+865 info install canvas@1.1.6
+866 verbose unsafe-perm in lifecycle false
+867 http 200 https://registry.npmjs.org/to-utf8/0.0.1
+868 silly registry.get cb [ 200,
+868 silly registry.get   { date: 'Sat, 14 Mar 2015 09:46:02 GMT',
+868 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+868 silly registry.get     etag: '"D7A8S8O1GZC8PFQSK2LL42N1T"',
+868 silly registry.get     'content-type': 'application/json',
+868 silly registry.get     'cache-control': 'max-age=60',
+868 silly registry.get     'content-length': '706',
+868 silly registry.get     'accept-ranges': 'bytes',
+868 silly registry.get     via: '1.1 varnish',
+868 silly registry.get     age: '0',
+868 silly registry.get     'x-served-by': 'cache-fra1226-FRA',
+868 silly registry.get     'x-cache': 'HIT',
+868 silly registry.get     'x-cache-hits': '1',
+868 silly registry.get     'x-timer': 'S1426326361.444836,VS0,VE690',
+868 silly registry.get     vary: 'Accept',
+868 silly registry.get     'keep-alive': 'timeout=10, max=50',
+868 silly registry.get     connection: 'Keep-Alive' } ]
+869 silly lockFile b96a9403-js-org-to-utf8-to-utf8-0-0-1-tgz https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz
+870 verbose lock https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz /Users/johnathan/.npm/b96a9403-js-org-to-utf8-to-utf8-0-0-1-tgz.lock
+871 verbose addRemoteTarball [ 'https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz',
+871 verbose addRemoteTarball   'd17aea72ff2fba39b9e43601be7b3ff72e089852' ]
+872 info retry fetch attempt 1 at 10:46:02
+873 verbose fetch to= /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz
+874 http GET https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz
+875 http 200 https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz
+876 verbose tar unpack /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz
+877 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+878 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package /Users/johnathan/.npm/666c7b3b-362191-0-550929692806676-package.lock
+879 silly lockFile 0fc46143-362191-0-550929692806676-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz
+880 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz /Users/johnathan/.npm/0fc46143-362191-0-550929692806676-tmp-tgz.lock
+881 silly gunzTarPerm modes [ '755', '644' ]
+882 silly gunzTarPerm extractEntry package.json
+883 silly gunzTarPerm extractEntry README.md
+884 silly gunzTarPerm extractEntry index.js
+885 silly gunzTarPerm extractEntry test.js
+886 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+887 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+888 silly lockFile 0fc46143-362191-0-550929692806676-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz
+889 silly lockFile 0fc46143-362191-0-550929692806676-tmp-tgz tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/tmp.tgz
+890 verbose tar pack [ '/Users/johnathan/.npm/to-utf8/0.0.1/package.tgz',
+890 verbose tar pack   '/Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package' ]
+891 verbose tarball /Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+892 verbose folder /Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+893 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+894 verbose lock tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package /Users/johnathan/.npm/666c7b3b-362191-0-550929692806676-package.lock
+895 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+896 verbose lock tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz /Users/johnathan/.npm/f27a139d-an-npm-to-utf8-0-0-1-package-tgz.lock
+897 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+898 silly lockFile 666c7b3b-362191-0-550929692806676-package tar:///Users/johnathan/tmp/npm-2095-QAfPv_WZ/1426326362191-0.550929692806676/package
+899 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+900 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+901 silly lockFile ac9c8654-nathan-npm-to-utf8-0-0-1-package /Users/johnathan/.npm/to-utf8/0.0.1/package
+902 verbose lock /Users/johnathan/.npm/to-utf8/0.0.1/package /Users/johnathan/.npm/ac9c8654-nathan-npm-to-utf8-0-0-1-package.lock
+903 silly lockFile ac9c8654-nathan-npm-to-utf8-0-0-1-package /Users/johnathan/.npm/to-utf8/0.0.1/package
+904 silly lockFile ac9c8654-nathan-npm-to-utf8-0-0-1-package /Users/johnathan/.npm/to-utf8/0.0.1/package
+905 verbose tar unpack /Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+906 silly lockFile 9933515c-nathan-npm-to-utf8-0-0-1-package tar:///Users/johnathan/.npm/to-utf8/0.0.1/package
+907 verbose lock tar:///Users/johnathan/.npm/to-utf8/0.0.1/package /Users/johnathan/.npm/9933515c-nathan-npm-to-utf8-0-0-1-package.lock
+908 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+909 verbose lock tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz /Users/johnathan/.npm/f27a139d-an-npm-to-utf8-0-0-1-package-tgz.lock
+910 silly gunzTarPerm modes [ '755', '644' ]
+911 silly gunzTarPerm extractEntry package.json
+912 silly gunzTarPerm extractEntry README.md
+913 silly gunzTarPerm extractEntry index.js
+914 silly gunzTarPerm extractEntry test.js
+915 silly lockFile 9933515c-nathan-npm-to-utf8-0-0-1-package tar:///Users/johnathan/.npm/to-utf8/0.0.1/package
+916 silly lockFile 9933515c-nathan-npm-to-utf8-0-0-1-package tar:///Users/johnathan/.npm/to-utf8/0.0.1/package
+917 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+918 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+919 verbose chmod /Users/johnathan/.npm/to-utf8/0.0.1/package.tgz 644
+920 verbose chown /Users/johnathan/.npm/to-utf8/0.0.1/package.tgz [ 501, 20 ]
+921 silly lockFile b96a9403-js-org-to-utf8-to-utf8-0-0-1-tgz https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz
+922 silly lockFile b96a9403-js-org-to-utf8-to-utf8-0-0-1-tgz https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz
+923 silly lockFile dee282ea-to-utf8-0-0-1 to-utf8@0.0.1
+924 silly lockFile dee282ea-to-utf8-0-0-1 to-utf8@0.0.1
+925 silly resolved [ { author:
+925 silly resolved      { name: 'T. Jameson Little',
+925 silly resolved        email: 't.jameson.little@gmail.com' },
+925 silly resolved     name: 'base64-js',
+925 silly resolved     description: 'Base64 encoding/decoding in pure JS',
+925 silly resolved     version: '0.0.2',
+925 silly resolved     repository:
+925 silly resolved      { type: 'git',
+925 silly resolved        url: 'git://github.com/beatgammit/deflate-js.git' },
+925 silly resolved     main: 'lib/b64.js',
+925 silly resolved     scripts: { test: 'cd test; node runner.js; cd -' },
+925 silly resolved     engines: { node: '>= 0.4' },
+925 silly resolved     dependencies: {},
+925 silly resolved     devDependencies: {},
+925 silly resolved     readme: 'Intro\n=====\n\n`base64-js` does basic base64 encoding/decoding in pure JS. Many browsers already have this functionality, but it is for text data, not all-purpose binary data.\n\nSometimes encoding/decoding binary data in the browser is useful, and that is what this module does.\n\nAPI\n===\n\n`base64-js` has two exposed functions, `toByteArray` and `fromByteArray`, which both take a single argument.\n\n* toByteArray- Takes a base64 string and returns a byte array\n* fromByteArray- Takes a byte array and returns a base64 string\n',
+925 silly resolved     readmeFilename: 'README.md',
+925 silly resolved     bugs: { url: 'https://github.com/beatgammit/deflate-js/issues' },
+925 silly resolved     homepage: 'https://github.com/beatgammit/deflate-js',
+925 silly resolved     _id: 'base64-js@0.0.2',
+925 silly resolved     dist: { shasum: 'f5ce44b3d78417469ff26180cbc209259ef5fc42' },
+925 silly resolved     _from: 'base64-js@0.0.2',
+925 silly resolved     _resolved: 'https://registry.npmjs.org/base64-js/-/base64-js-0.0.2.tgz' },
+925 silly resolved   { name: 'to-utf8',
+925 silly resolved     version: '0.0.1',
+925 silly resolved     description: 'single-function form of node\'s Buffer.toString(utf8)',
+925 silly resolved     main: 'index.js',
+925 silly resolved     scripts: { test: 'node test.js' },
+925 silly resolved     repository:
+925 silly resolved      { type: 'git',
+925 silly resolved        url: 'git://github.com/chrisdickinson/to-utf8.git' },
+925 silly resolved     keywords: [ 'utf8', 'buffer' ],
+925 silly resolved     author: { name: 'Chris Dickinson', email: 'chris@neversaw.us' },
+925 silly resolved     license: 'MIT',
+925 silly resolved     devDependencies: { tape: '~0.2.2' },
+925 silly resolved     readme: '# to-utf8\n\ngiven an integer-indexable input iterable, produce a utf8 string.\n\n```javascript\n  var utf8 = require(\'to-utf8\')\n\n  var buf = new Buffer(\'淾淾淾 hello world 淾淾 yep ƒuu 淾\', \'utf8\')\n  assert.equal(utf8(buf), buf.toString(\'utf8\'))\n```\n\n## api\n\n#### utf8(iterable[, byteStart][, byteEnd]) -> string\n\ntake an iterable of bytes (`0...0xFF`) and produce an utf8 string.\n\n# license\n\nMIT\n',
+925 silly resolved     readmeFilename: 'README.md',
+925 silly resolved     bugs: { url: 'https://github.com/chrisdickinson/to-utf8/issues' },
+925 silly resolved     homepage: 'https://github.com/chrisdickinson/to-utf8',
+925 silly resolved     _id: 'to-utf8@0.0.1',
+925 silly resolved     dist: { shasum: 'd17aea72ff2fba39b9e43601be7b3ff72e089852' },
+925 silly resolved     _from: 'to-utf8@0.0.1',
+925 silly resolved     _resolved: 'https://registry.npmjs.org/to-utf8/-/to-utf8-0.0.1.tgz' } ]
+926 info install base64-js@0.0.2 into /usr/local/lib/node_modules/qrcode/node_modules/bops
+927 info install to-utf8@0.0.1 into /usr/local/lib/node_modules/qrcode/node_modules/bops
+928 info installOne base64-js@0.0.2
+929 info installOne to-utf8@0.0.1
+930 info /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js unbuild
+931 info /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8 unbuild
+932 verbose tar unpack /Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+933 silly lockFile 288b923e-ules-bops-node-modules-base64-js tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js
+934 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js /Users/johnathan/.npm/288b923e-ules-bops-node-modules-base64-js.lock
+935 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+936 verbose lock tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz /Users/johnathan/.npm/9970df16--npm-base64-js-0-0-2-package-tgz.lock
+937 verbose tar unpack /Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+938 silly lockFile 238b09ab-odules-bops-node-modules-to-utf8 tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8
+939 verbose lock tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8 /Users/johnathan/.npm/238b09ab-odules-bops-node-modules-to-utf8.lock
+940 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+941 verbose lock tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz /Users/johnathan/.npm/f27a139d-an-npm-to-utf8-0-0-1-package-tgz.lock
+942 silly gunzTarPerm modes [ '755', '644' ]
+943 silly gunzTarPerm modes [ '755', '644' ]
+944 silly gunzTarPerm extractEntry package.json
+945 silly gunzTarPerm extractEntry package.json
+946 silly gunzTarPerm extractEntry README.md
+947 silly gunzTarPerm extractEntry lib/b64.js
+948 silly gunzTarPerm extractEntry README.md
+949 silly gunzTarPerm extractEntry index.js
+950 silly gunzTarPerm extractEntry test.js
+951 silly gunzTarPerm extractEntry test/runner.js
+952 silly lockFile 238b09ab-odules-bops-node-modules-to-utf8 tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8
+953 silly lockFile 238b09ab-odules-bops-node-modules-to-utf8 tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8
+954 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+955 silly lockFile f27a139d-an-npm-to-utf8-0-0-1-package-tgz tar:///Users/johnathan/.npm/to-utf8/0.0.1/package.tgz
+956 info preinstall to-utf8@0.0.1
+957 silly lockFile 288b923e-ules-bops-node-modules-base64-js tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js
+958 silly lockFile 288b923e-ules-bops-node-modules-base64-js tar:///usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js
+959 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+960 silly lockFile 9970df16--npm-base64-js-0-0-2-package-tgz tar:///Users/johnathan/.npm/base64-js/0.0.2/package.tgz
+961 verbose readDependencies using package.json deps
+962 verbose readDependencies using package.json deps
+963 silly resolved []
+964 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8
+965 info build /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/to-utf8
+966 verbose linkStuff [ true,
+966 verbose linkStuff   '/usr/local/lib/node_modules',
+966 verbose linkStuff   false,
+966 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules' ]
+967 info linkStuff to-utf8@0.0.1
+968 verbose linkBins to-utf8@0.0.1
+969 verbose linkMans to-utf8@0.0.1
+970 verbose rebuildBundles to-utf8@0.0.1
+971 info preinstall base64-js@0.0.2
+972 info install to-utf8@0.0.1
+973 info postinstall to-utf8@0.0.1
+974 verbose readDependencies using package.json deps
+975 verbose readDependencies using package.json deps
+976 silly resolved []
+977 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js
+978 info build /usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules/base64-js
+979 verbose linkStuff [ true,
+979 verbose linkStuff   '/usr/local/lib/node_modules',
+979 verbose linkStuff   false,
+979 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules/bops/node_modules' ]
+980 info linkStuff base64-js@0.0.2
+981 verbose linkBins base64-js@0.0.2
+982 verbose linkMans base64-js@0.0.2
+983 verbose rebuildBundles base64-js@0.0.2
+984 info install base64-js@0.0.2
+985 info postinstall base64-js@0.0.2
+986 verbose about to build /usr/local/lib/node_modules/qrcode/node_modules/bops
+987 info build /usr/local/lib/node_modules/qrcode/node_modules/bops
+988 verbose linkStuff [ true,
+988 verbose linkStuff   '/usr/local/lib/node_modules',
+988 verbose linkStuff   false,
+988 verbose linkStuff   '/usr/local/lib/node_modules/qrcode/node_modules' ]
+989 info linkStuff bops@0.0.6
+990 verbose linkBins bops@0.0.6
+991 verbose linkMans bops@0.0.6
+992 verbose rebuildBundles bops@0.0.6
+993 verbose rebuildBundles [ 'base64-js', 'to-utf8' ]
+994 info install bops@0.0.6
+995 info postinstall bops@0.0.6
+996 info canvas@1.1.6 Failed to exec install script
+997 info /usr/local/lib/node_modules/qrcode/node_modules/canvas unbuild
+998 info preuninstall canvas@1.1.6
+999 info uninstall canvas@1.1.6
+1000 verbose false,/usr/local/lib/node_modules,/usr/local/lib/node_modules/qrcode/node_modules unbuild canvas@1.1.6
+1001 info postuninstall canvas@1.1.6
+1002 verbose about to build /usr/local/lib/node_modules/qrcode
+1003 info /usr/local/lib/node_modules/qrcode unbuild
+1004 info preuninstall qrcode@0.2.12
+1005 info uninstall qrcode@0.2.12
+1006 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild qrcode@0.2.12
+1007 verbose /usr/local/bin,[object Object] binRoot
+1008 info postuninstall qrcode@0.2.12
+1009 error canvas@1.1.6 install: `node-gyp rebuild`
+1009 error Exit status 1
+1010 error Failed at the canvas@1.1.6 install script.
+1010 error This is most likely a problem with the canvas package,
+1010 error not with npm itself.
+1010 error Tell the author that this fails on your system:
+1010 error     node-gyp rebuild
+1010 error You can get their info via:
+1010 error     npm owner ls canvas
+1010 error There is likely additional logging output above.
+1011 error System Darwin 14.0.0
+1012 error command "node" "/usr/local/bin/npm" "install" "-g" "qrcode"
+1013 error cwd /Users/johnathan/Desktop/johnathanfr
+1014 error node -v v0.10.26
+1015 error npm -v 1.4.3
+1016 error code ELIFECYCLE
+1017 verbose exit [ 1, true ]

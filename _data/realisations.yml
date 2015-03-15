@@ -2,19 +2,23 @@ lilleweb:
   id: lilleweb
   name: Lille Web
   description: Structure de partage de ressources web
-  whatIDo : Lorem ipsum sit dolor amet ...
+  whatIDo : "<p> Lille Web propose au plus grand nombre une grande quantité de ressources web hétéroclites. Tout ceci se fait via des articles traitant de nombreux sujets tels que le développement, le design, l'actualité, ect.</p> <p> Nous filmons également les conférences où nous allons pour les mettre en ligne sur <a href=\"https://www.youtube.com/channel/UC7OVjzAqpBYqo5-pFC8At7g\">notre chaînes Youtube</a>.</p>"
+  technos: "<li>Jekyll</li> <li>SASS</li> <li>AngularJS</li>"
   image: /src/img/realisation/LilleWeb.jpg
   link: http://www.lilleweb.fr
 altiboard:
   id: altiboard
   name: altiboard°
   description: Dashboard analytics
-  whatIDo : Lorem ipsum sit dolor amet ...
+  whatIDo : "<p> L'altiboard° est un dashboard analytics permettant d'avoir toujours une idée simple de l'état de son marché. </p> <p> Grâce à des graphiques très simples, colorés et interractif, vous pouvez suivre en un clin d'oeil vos visites, vos chiffres d'affaires, vos leviers de traffic, ect. Une <a href='http://www.altiboard.com/'>version gratuite</a> est disponbile, compatible avec Google Analytics et Site Catalyst. Vous pouvez également avoir une version custom' compatible avec toutes vos données, dont Webtrends et ATInternet par exemple.</p>"
+  technos: "<li>PHP</li> <li> Jade/SASS </li>"
   image: /src/img/realisation/altiboard.jpg
   link: http://www.altiboard.com/
 cdp:
   id: cdp
   name: Camping des Poteries
   description: Sites vitrine d'un camping dans le Nord
+  whatIDo: "<p> L'idée ici était de mettre en avant le côté familial, simple et forestier de ce camping situé près de Saint-Amand. En partant de ce constat simple, nous avons mis en place un jeux de couleur axé autour du vert, un site où les images sont mises en avant, un calendirer très facile d'utilisation, et un système de réservation intuitif. </p> <p> Le contenu est géré par les propriétaires du camping. </p>"
+  technos: "<li> AngularJS </li> <li> Bootstrap </li> <li> Less </li>"
   image: /src/img/realisation/camping.jpg
   link: http://www.campingdespoteries.fr/
