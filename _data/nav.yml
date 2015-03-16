@@ -1,6 +1,6 @@
 profile:
- display: "Profile"
- link: "/profile"
+ display: "Profil"
+ link: "/profil"
  desc: ""
 blog:
  display: "Blog"
