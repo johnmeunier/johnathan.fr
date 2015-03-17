@@ -1,0 +1,35 @@
+body{
+	background-color : #e74c3c;
+	font-family: Helvetica;
+	border: 20px solid #FFF;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.pageContainer{
+	text-align: center;
+}
+
+#gauge{
+
+}
+
+body.night{
+	background-color: #384047;
+	color : #FFF;
+}
+
+
+@media (light-level: normal) {
+  body {border-color : #FFF;}
+}
+@media (light-level: dim) {
+  body {border-color : #e74c3c;}
+}
+@media (light-level: washed) {
+  body {border-color : #384047;}
+}
