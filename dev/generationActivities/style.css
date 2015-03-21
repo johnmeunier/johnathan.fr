@@ -1,0 +1,38 @@
+body, ul, li{
+  margin : 0px;
+  padding : 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+  list-style : none;
+}
+
+ul > ul{
+  border : 3px solid #2980b9;
+  width: 300px;
+  height: auto;
+  display:  inline-block;
+  margin : 30px;
+  vertical-align: top;
+  padding : 20px;
+}
+
+.date{
+  text-align : center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+ul > ul > li{
+  line-height: 30px;
+}
+
+ul > ul > li strong{
+  color : #2980b9;
+}
+
+@media print {
+  ul > ul {
+    page-break-inside: avoid;
+  }
+}
