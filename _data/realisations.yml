@@ -1,8 +1,16 @@
+jesuispizza:
+  id: jesuispizza
+  name: "#JeSuisPizza"
+  description: Site de partage d'images de Pizza via Twitter
+  whatIDo: "<p>#JeSuisPizza est un site communautaire de partage de photos de pizzas via Twitter. Il suffit de twitter votre photo avec le hashtag #JeSuisPizza pour qu'elle apparaisse sur le site en public. L'idée est également de mentionner la pizzeria où vous êtes !</p><p>Nous en avions marre de voir la première personne du singulier du verbe 'être' utilisée pour toutes les choses dramatiques qu'il se passe ... Nous avons donc voulu redonner un peu de vivant à ces simples mots en les associant avec un terme que tout le monde aime !</p>"
+  technos: "<li>Express</li> <li>Node.js</li> <li>Jade</li> <li>npm twit</li> "
+  image: /src/img/realisation/jesuispizza.jpg
+  link: http://www.jesuispizza.fr
 lilleweb:
   id: lilleweb
   name: Lille Web
   description: Structure de partage de ressources web
-  whatIDo : "<p> Lille Web propose au plus grand nombre une grande quantité de ressources web hétéroclites. Tout ceci se fait via des articles traitant de nombreux sujets tels que le développement, le design, l'actualité, ect.</p> <p> Nous filmons également les conférences où nous allons pour les mettre en ligne sur <a href=\"https://www.youtube.com/channel/UC7OVjzAqpBYqo5-pFC8At7g\">notre chaînes Youtube</a>.</p>"
+  whatIDo: "<p> Lille Web propose au plus grand nombre une grande quantité de ressources web hétéroclites. Tout ceci se fait via des articles traitant de nombreux sujets tels que le développement, le design, l'actualité, ect.</p> <p> Nous filmons également les conférences où nous allons pour les mettre en ligne sur <a href=\"https://www.youtube.com/channel/UC7OVjzAqpBYqo5-pFC8At7g\">notre chaînes Youtube</a>.</p>"
   technos: "<li>Jekyll</li> <li>SASS</li> <li>AngularJS</li>"
   image: /src/img/realisation/LilleWeb.jpg
   link: http://www.lilleweb.fr
@@ -10,7 +18,7 @@ altiboard:
   id: altiboard
   name: altiboard°
   description: Dashboard analytics
-  whatIDo : "<p> L'altiboard° est un dashboard analytics permettant d'avoir toujours une idée simple de l'état de son marché. </p> <p> Grâce à des graphiques très simples, colorés et intéractif, vous pouvez suivre en un clin d'oeil vos visites, vos chiffres d'affaires, vos leviers de traffic, ect. Une <a href='http://www.altiboard.com/'>version gratuite</a> est disponible, compatible avec Google Analytics et Site Catalyst. Vous pouvez également avoir une version custom' compatible avec toutes vos données, dont Webtrends et ATInternet par exemple.</p><p> J'ai été développeur front-end du projet, notamment dans le développement d'un framework SVG sur-mesure </p>."
+  whatIDo: "<p> L'altiboard° est un dashboard analytics permettant d'avoir toujours une idée simple de l'état de son marché. </p> <p> Grâce à des graphiques très simples, colorés et intéractif, vous pouvez suivre en un clin d'oeil vos visites, vos chiffres d'affaires, vos leviers de traffic, ect. Une <a href='http://www.altiboard.com/'>version gratuite</a> est disponible, compatible avec Google Analytics et Site Catalyst. Vous pouvez également avoir une version custom' compatible avec toutes vos données, dont Webtrends et ATInternet par exemple.</p><p> J'ai été développeur front-end du projet, notamment dans le développement d'un framework SVG sur-mesure </p>."
   technos: "<li>PHP</li> <li> Jade/SASS </li>"
   image: /src/img/realisation/altiboard.jpg
   link: http://www.altiboard.com/
