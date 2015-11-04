@@ -1,3 +1,11 @@
+latinvafrance:
+  id: latinvafrance
+  name: "Latinva Fitness France"
+  description: Toutes les danses latines en un seul cours !
+  whatIDo: "<p>L'idée était d'avoir un site extrêmement facile à utiliser pour des non initiés.</p><p> Les objectifs étaient multiples : pouvoir faire découvrir la latinva, expliquer les différentes prestations possibles, réserver et gérer ses réservations, ..."
+  technos: "<li>Express</li> <li>Node.js</li> <li>Jade</li> <li>SQL</li> <li>auth</li><li>Mail (mandrill) </li>"
+  image: /src/img/realisation/latinva.png
+  link: http://latinvafrance.fr
 jesuispizza:
   id: jesuispizza
   name: "#JeSuisPizza"
